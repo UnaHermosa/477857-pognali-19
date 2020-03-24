@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Кравчишина](https://up.htmlacademy.ru/adaptive/19/user/477857).
-* Наставник: `Неизвестно`.
+* Наставник: [Елизавета Цыгвинцева](https://htmlacademy.ru/profile/ijwby).
 
 ---
 
