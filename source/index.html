@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
-      <a class="logo">Погнали?</a>
+      <p class="page-header__title">В путешествие с крутыми попутчиками!</p>
+      <a class="page-header__logo logo">Погнали?</a>
       <nav class="main-nav main-nav--closed main-nav--scroll">
         <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         <ul class="main-nav__list">
@@ -18,13 +18,13 @@
       </nav>
       <ul class="user-menu">
         <li class="user-menu__item">
+          <a class="button button--login" href="#">Авторизация</a>
+        </li>
+        <li class="user-menu__item">
           <a class="button button--phone" href="tel:88005558628" aria-label="Нажмите, чтобы позвонить нам">8 800 555-86-28</a>
         </li>
         <li class="user-menu__item">
           <a class="button button--email" href="mailto:mail@htmlacademy.ru" aria-label="Нажмите, чтобы связаться с нами по электронной почте">mail@htmlacademy.ru</a>
-        </li>
-        <li class="user-menu__item">
-          <a class="button button--login" href="#">Авторизация</a>
         </li>
       </ul>
       <ul class="socials">
@@ -46,15 +46,16 @@
       </ul>
     </header>
     <main class="page-main">
+      <h1 class="visually-hidden">Лучший сервис поиска попутчиков в путешествиях</h1>
       <section class="introduction">
         <h2 class="visually-hidden">Как пользоваться нашим приложением</h2>
-        <blockquote class="slogan">
+        <blockquote class="introduction__slogan slogan">
           <p class="slogan__text">
             &laquo;Лучшее приложение, что я видел в жизни!&raquo;
           </p>
           <cite class="slogan__author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
         </blockquote>
-        <ul class="steps">
+        <ul class="introduction__steps steps">
           <li class="steps__item steps__item--first">
             <p class="steps__description">Выберите направление</p>
             <span class="steps__number">1</span>
@@ -91,40 +92,40 @@
           Люди сами пишут о странах, куда хотели бы отправиться
           и чем можно там заняться.
         </p>
-        <ul class="country__list">
-          <li class="country__item">
-            <article class="country country--thailand">
-              <img class="country__image country__image--thailand" src="img/thailand.jpg" width="270" height="110" alt="Вид на прекрасный пляж Тайланда">
-              <img class="country__flag country__flag--thailand" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Королевства Тайланда">
+        <ul class="countries__list">
+          <li class="countries__item">
+            <article class="country">
+              <img class="country__image" src="img/thailand.jpg" width="270" height="110" alt="Вид на прекрасный пляж Тайланда">
+              <img class="country__flag" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Королевства Тайланда">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
-                  <h2 class="country__title">Тайланд</h2>
+                  <h3 class="country__title">Тайланд</h3>
                   <span class="country__slogan">Джунгли зовут!</span>
                 </div>
                 <span class="country__tourists">18321</span>
               </div>
             </article>
           </li>
-          <li class="country__item">
-            <article class="country country--france">
-              <img class="country__image country__image--france" src="img/france.jpg" width="270" height="110" alt="Улочки Франции">
-              <img class="country__flag country__flag--france" src="img/france-flag.png" width="88" height="35" alt="Государственный флаг Республики Франция">
+          <li class="countries__item">
+            <article class="country">
+              <img class="country__image" src="img/france.jpg" width="270" height="110" alt="Улочки Франции">
+              <img class="country__flag" src="img/france-flag.png" width="88" height="35" alt="Государственный флаг Республики Франция">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
-                  <h2 class="country__title">Франция</h2>
+                  <h3 class="country__title">Франция</h3>
                   <span class="country__slogan">Трэ бьен, манифик!</span>
                 </div>
                 <span class="country__tourists">12518</span>
               </div>
             </article>
           </li>
-          <li class="country__item">
-            <article class="country country--czech">
-              <img class="country__image country__image--czech" src="img/czech.jpg" width="270" height="110" alt="Мост через реку в Чехии">
-              <img class="country__flag country__flag--czech" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
+          <li class="countries__item">
+            <article class="country">
+              <img class="country__image" src="img/czech.jpg" width="270" height="110" alt="Мост через реку в Чехии">
+              <img class="country__flag" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
-                  <h2 class="country__title">Чехия</h2>
+                  <h3 class="country__title">Чехия</h3>
                   <span class="country__slogan">Закоулки старой Европы</span>
                 </div>
                 <span class="country__tourists">5326</span>
@@ -144,17 +145,25 @@
         <ul class="travelmates__list">
           <li class="travelmates__item">
             <article class="traveler">
-              <img class="traveler__photo traveler__photo--tanya-firsova" src="img/tanya-firsova.jpg" width="270" height="270" alt="Таня Фирсова нежится под солнцем на лазурных волнах">
-              <img class="traveler__rating traveler__rating--tanya-firsova" src="img/tanya-firsova-rating.png" width="60" height="60" alt="Рейтинг Тани Фирсовой - 99">
+              <img class="traveler__photo" src="img/tanya-firsova.jpg" width="270" height="270" alt="Таня Фирсова нежится под солнцем на лазурных волнах">
+              <div class="traveler__level-wrapper">
+                <div class="traveler__level-bar">
+                  <div class="traveler__level-text-wrapper">
+                    <span class="traveler__level-number">99</span>
+                    <span class="traveler__level-text">level</span>
+                  </div>
+                  <svg><!--картинка для прогресс-бара--></svg>
+                </div>
+              </div>
               <ul class="traveler__countries-list places">
                 <li class="traveler__countries-item places__item">
-                  <img class="places__item--sri-lanka" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
+                  <img class="places__image" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
                 </li>
                 <li class="traveler__countries-item places__item">
-                  <img class="places__item--thailand" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
+                  <img class="places__image" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
                 </li>
                 <li class="traveler__countries-item places__item">
-                  <img class="places__item--seyshelles" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
+                  <img class="places__image" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
                 </li>
               </ul>
               <div class="traveler__wrapper">
@@ -182,14 +191,22 @@
           </li>
           <li class="travelmates__item">
             <article class="traveler">
-              <img class="traveler__photo traveler__photo--petya-demin" src="img/petya-demin.jpg" width="270" height="270" alt="Петя Демин на фоне заснеженных гор">
-              <img class="traveler__rating traveler__rating--petya-demin" src="img/petya-demin-rating.png" width="60" height="60" alt="Рейтинг Пети Демина - 80">
+              <img class="traveler__photo" src="img/petya-demin.jpg" width="270" height="270" alt="Петя Демин на фоне заснеженных гор">
+              <div class="traveler__level-wrapper">
+                <div class="traveler__level-bar">
+                  <div class="traveler__level-text-wrapper">
+                    <span class="traveler__level-number">80</span>
+                    <span class="traveler__level-text">level</span>
+                  </div>
+                  <svg><!--картинка для прогресс-бара--></svg>
+                </div>
+              </div>
               <ul class="traveler__countries-list places">
                 <li class="traveler__countries-item places__item">
-                  <img class="places__item--belgium" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
+                  <img class="places__image" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
                 </li>
                 <li class="traveler__countries-item places__item">
-                  <img class="places__item--czech" src="img/szceh-flag.png" width="88" height="35" alt="Государственный флаг Чешской Респудлики">
+                  <img class="places__image" src="img/szceh-flag.png" width="88" height="35" alt="Государственный флаг Чешской Респудлики">
                 </li>
               </ul>
               <div class="traveler__wrapper">
@@ -199,7 +216,7 @@
                 </div>
                 <p class="traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
               </div>
-              <div class="traveleer__pics-wrapper">
+              <div class="traveler__pics-wrapper">
                 <span class="traveler__pics">
                   <!--здесь будет иконка автобуса в формате svg-->
                 </span>
@@ -243,8 +260,8 @@
       </div>
     </main>
     <footer class="page-footer">
-      <a class="logo">Погнали?</a>
-      <ul class="socials">
+      <a class="page-footer__logo logo">Погнали?</a>
+      <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--facebook-footer" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
             <svg><!--Здесь будет инконка фейсбука--></svg>
