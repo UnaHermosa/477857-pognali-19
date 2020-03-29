@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Выбери своего попутчика</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Попутчики</h1>
+      <a class="logo" href="index.html">Погнали?</a>
+      <nav class="main-nav main-nav--closed main-nav--scroll">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">О сервисе</a></li>
+          <li class="main-nav__item"><a href="form.html">Направления</a></li>
+          <li class="main-nav__item"><a>Попутчики</a></li>
+        </ul>
+      </nav>
+      <ul class="user-menu">
+        <li class="user-menu__item">
+          <a class="button button--phone" href="tel:88005558628" aria-label="Нажмите, чтобы позвонить нам">8 800 555-86-28</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="button button--email" href="mailto:mail@htmlacademy.ru" aria-label="Нажмите, чтобы связаться с нами по электронной почте">mail@htmlacademy.ru</a>
+        </li>
+        <li class="user-menu__item">
+          <a class="button button--login" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
+            <svg><!--Здесь будет инконка фейсбука--></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com" aria-label="Присоединяйтесь к нам во Вконтакте">
+            <svg><!--Здесь будет иконка Вконтакте--></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="htpps://instagram.com" aria-label="Присоединяйтесь к нам в Инстаграме">
+            <svg><!--Здесь будет ионка Инстаграма--></svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="page-main">
+      <section class="filtr">
+        <h2 class="filtr__title">Фильрация по странам</h2>
+        <!--Секция будет сверстана в следующем задании -->
+      </section>
+      <section class="suitable-companions">
+        <h2 class="visually-hidden">Подходящие Вам попутчики</h2>
+        <ul class="suitable-companions__list">
+          <li class="suitable-companions__item">
+            <article class="traveler">
+              <h3 class="visually-hidden">Информация о пользователе</h3>
+              <section class="traveler__info">
+                <a class="traveler__info-link" href="tanya-firsova.html">
+                  <h4 class="traveler__name">Таня Фирсова</h4>
+                  <img class="traveler__info-photo traveler__info-photo--tanya-firsova" src="img/tanya-firsova-pict.jpg" width="70" height="70" alt="Изображение Тани Фирсовой">
+                </a>
+                <span class="traveler__remoteness">1,5 м</span>
+                <span class="traveler__status traveler__status--offline"></span>
+                <p class="traveler__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              </section>
+              <section class="traveler__wishes">
+                <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                <ul class="traveler__wishes-list places">
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--sri-lanka" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--thailand" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--seyshelles" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
+                  </li>
+                </ul>
+              </section>
+              <section class="traveler__way-of-movement">
+                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                <div class="traveler__pics-wrapper">
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка автобуса в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка самолета в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка велосипеда в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка человечка в формате svg-->
+                  </span>
+                </div>
+              </section>
+              <div class="traveler__level-wrapper">
+                <span class="traveler__level">левел:</span>
+                <img class="traveler__rating traveler__rating--tanya-firsova" src="img/tanya-firsova-rating.png" width="45" height="45" alt="Рейтинг Тани Фирсовой - 99">
+              </div>
+              <a class="button suitable-companions__more" href="#">Позвать!</a>
+            </article>
+          </li>
+          <li class="suitable-companions__item">
+            <article class="traveler">
+              <h4 class="visually-hidden">Информация о пользователе</h4>
+              <section class="traveler__info">
+                <a class="traveler__info-link" href="petya-demin.html">
+                  <h4 class="traveler__name">Петя Демин</h4>
+                  <img class="traveler__info-photo traveler__info-photo--petya-demin" src="img/petya-demin-pict.jpg" width="70" height="70" alt="Изображение Пети Демина">
+                </a>
+                <span class="traveler__remoteness">1500</span>
+                <span class="traveler__status traveler__status--offline"></span>
+                <p class="traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
+              </section>
+              <section class="traveler__wishes">
+                <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                <ul class="traveler__wishes-list places">
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--belgium" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--czech" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
+                  </li>
+                </ul>
+              </section>
+              <section class="traveler__way-of-movement">
+                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                <div class="traveler__pics-wrapper">
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка автобуса в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка самолета в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка велосипеда в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка человечка в формате svg-->
+                  </span>
+                </div>
+              </section>
+              <div class="traveler__level-wrapper">
+                <span class="traveler__level">левел:</span>
+                <img class="traveler__rating traveler__rating--petya-demin" src="img/petya-demin-rating.png" width="45" height="45" alt="Рейтинг Пети Демина - 80">
+              </div>
+              <a class="button suitable-companions__more" href="#">Позвать!</a>
+            </article>
+          </li>
+          <li class="suitable-companions__item">
+            <article class="traveler">
+              <h3 class="visually-hidden">Информация о пользователе</h3>
+              <section class="traveler__info">
+                <a class="traveler__info-link" href="mark-smolov.html">
+                  <h4 class="traveler__name">Марк Смолов</h4>
+                  <img class="traveler__info-photo traveler__info-photo--mark-smolov" src="img/mark-smolov-pict.jpg" width="70" height="70" alt="Изображение Марка Смолова">
+                </a>
+                <span class="traveler__remoteness">170</span>
+                <span class="traveler__status traveler__status--offline"></span>
+                <p class="traveler__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              </section>
+              <section class="traveler__wishes">
+                <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                <ul class="traveler__wishes-list places">
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--usa" src="img/usa-flag.png" width="88" height="35" alt="Государственный флаг Соединенных штатов Америки">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--australia" src="img/australia-flag.png" width="88" height="35" alt="Государственный флаг Австралии">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--dominica" src="img/dominica-flag.png" width="88" height="35" alt="Государственный флаг Доминики">
+                  </li>
+                </ul>
+              </section>
+              <section class="traveler__way-of-movement">
+                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                <div class="traveler__pics-wrapper">
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка автобуса в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка самолета в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка велосипеда в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка человечка в формате svg-->
+                  </span>
+                </div>
+              </section>
+              <div class="traveler__level-wrapper">
+                <span class="traveler__level">левел:</span>
+                <img class="traveler__rating traveler__rating--mark-smolov" src="img/mark-smolov-rating.png" width="45" height="45" alt="Рейтинг Марка Смолова - 25">
+              </div>
+              <a class="button suitable-companions__more" href="#">Позвать!</a>
+            </article>
+          </li>
+          <li class="suitable-companions__item">
+            <article class="traveler">
+              <h3 class="visually-hidden">Информация о пользователе</h3>
+              <section class="traveler__info">
+                <a class="traveler__info-link" href="larisa-rogovaya.html">
+                  <h4 class="traveler__name">Лариса Роговая</h4>
+                  <img class="traveler__info-photo traveler__info-photo--larisa-rogovaya" src="img/larisa-rogovaya-pict.jpg" width="70" height="70" alt="Изображение Ларисы Роговой">
+                </a>
+                <span class="traveler__remoteness">23</span>
+                <span class="traveler__status traveler__status--online"></span>
+                <p class="traveler__tags">#образование #карьера #учеба #линкедин</p>
+              </section>
+              <section class="traveler__wishes">
+                <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                <ul class="traveler__wishes-list places">
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--england" src="img/england-flag.png" width="88" height="35" alt="Государственный флаг Королевста Великобритания">
+                  </li>
+                  <li class="traveler__wishes-item places__item">
+                    <img class="places__item--germany" src="img/germany-flag.png" width="88" height="35" alt="Государственный флаг Федеративной Республики Германия">
+                  </li>
+                </ul>
+              </section>
+              <section class="traveler__way-of-movement">
+                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                <div class="traveler__pics-wrapper">
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка автобуса в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка самолета в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка велосипеда в формате svg-->
+                  </span>
+                  <span class="traveler__pics">
+                    <!--здесь будет иконка человечка в формате svg-->
+                  </span>
+                </div>
+              </section>
+              <div class="traveler__level-wrapper">
+                <span class="traveler__level">левел:</span>
+                <img class="traveler__rating traveler__rating--larisa-rogovaya" src="img/larisa-rogovaya-rating.png" width="45" height="45" alt="Рейтинг Ларисы Роговой - 50">
+              </div>
+              <a class="button suitable-companions__more" href="#">Позвать!</a>
+            </article>
+          </li>
+        </ul>
+        <a class="suitable-companions__button" href="more-companions.html">Показать еще</a>
+        <div class="suitable-companions__controls-wrapper">
+          <button class="suitable-companions__control sutable-companions__control--back" type="button" aria-label="Перейти к предыдущему попутчику"></button>
+          <button class="suitable-companions__control sutable-companions__control--forward" type="button" aria-label="Перейти к следующему попутчику"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="logo">Погнали?</a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
+            <svg><!--Здесь будет инконка фейсбука--></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com" aria-label="Присоединяйтесь к нам во Вконтакте">
+            <svg><!--Здесь будет иконка Вконтакте--></svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="htpps://instagram.com" aria-label="Присоединяйтесь к нам в Инстаграме">
+            <svg><!--Здесь будет ионка Инстаграма--></svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__developer-text">Разработано</span>
+        <img class="page-footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </footer>
+  </body>
+</html>
