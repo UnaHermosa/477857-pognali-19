@@ -2,11 +2,263 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+    <title>Погнали</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
+      <a class="logo">Погнали?</a>
+      <nav class="main-nav main-nav--closed main-nav--scroll">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">О сервисе</a></li>
+          <li class="main-nav__item"><a href="form.html">Направления</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Попутчики</a></li>
+        </ul>
+      </nav>
+      <ul class="user-menu">
+        <li class="user-menu__item"><a class="button button--phone" href="tel:88005558628" aria-label="Нажмите, чтобы позвонить нам">8 800 555-86-28</a></li>
+        <li class="user-menu__item"><a class="button button--email" href="mailto:mail@htmlacademy.ru" aria-label="Нажмите, чтобы связаться с нами по электронной почте">mail@htmlacademy.ru</li>
+        <li class="user-menu__item"><a class="button button--login" href="#">Авторизация</a></li>
+      </ul>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
+            <svg>Здесь будет инконка фейсбука</svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com" aria-label="Присоединяйтесь к нам во Вконтакте">
+            <svg>Здесь будет иконка Вконтакте</svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="htpps://instagram.com" aria-label="Присоединяйтесь к нам в Инстаграме">
+            <svg>Здесь будет ионка Инстаграма</svg>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="page-main">
+      <section class="introduction">
+        <h2 class="visually-hidden">Как пользоваться нашим приложением</h2>
+        <blockquote class="slogan">
+          <p class="slogan__text">
+            &laquo;Лучшее приложение, что я видел в жизни!&raquo;
+          </p>
+          <cite class="slogan__author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
+        </blockquote>
+        <ul class="steps">
+          <li class="steps__item steps__item--first">
+            <p class="steps__description">Выберите направление</p>
+            <span class="steps__number">1</span>
+          </li>
+          <li class="steps__item steps__item--second">
+            <p class="steps__description">Изучите идеи путешественников</p>
+            <span class="steps__number">2</span>
+          </li>
+          <li class="steps__item steps__item--third">
+            <p class="steps__description">Находите тех, кто на вас похож</p>
+            <span class="steps__number">3</span>
+          </li>
+          <li class="steps__item steps__item--fourth">
+            <p class="steps__description">Путешествуйте вместе!</p>
+            <span class="steps__number">4</span>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <h2 class="about-us__title">О сервисе</h2>
+        <p class="about-us__text">Любое путешествие веселее
+          с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <b class="about-us__text">А если найдете кого-то
+          близкого по духу — скорее
+          зовите в совместный трип!
+        </b>
+      </section>
+      <section class="countries">
+        <h2 class="countries__title">Направления</h2>
+        <p class="countries__description">Мы не продаем туры
+          и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <ul class="country__list">
+          <li class="country__item">
+            <article class="country country--thailand">
+              <img class="country__image country__image--thailand" src="img/thailand.jpg" width="270" height="110" alt="Вид на прекрасный пляж Тайланда">
+              <img class="country__flag country__flag--thailand" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Королевства Тайланда">
+              <div class="country__wrapper">
+                <div class="country__wrapper-group">
+                  <h2 class="country__title">Тайланд</h2>
+                  <span class="country__slogan">Джунгли зовут!</span>
+                </div>
+                <span class="country__tourists">18321</span>
+              </div>
+            </article>
+          </li>
+          <li class="country__item">
+            <article class="country country--france">
+              <img class="country__image country__image--france" src="img/france.jpg" width="270" height="110" alt="Улочки Франции">
+              <img class="country__flag country__flag--france" src="img/france-flag.png" width="88" height="35" alt="Государственный флаг Республики Франция">
+              <div class="country__wrapper">
+                <div class="country__wrapper-group">
+                  <h2 class="country__title">Франция</h2>
+                  <span class="country__slogan">Трэ бьен, манифик!</span>
+                </div>
+                <span class="country__tourists">12518</span>
+              </div>
+            </article>
+          </li>
+          <li class="country__item">
+            <article class="country country--czech">
+              <img class="country__image country__image--czech" src="img/czech.jpg" width="270" height="110" alt="Мост через реку в Чехии">
+              <img class="country__flag country__flag--czech" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
+              <div class="country__wrapper">
+                <div class="country__wrapper-group">
+                  <h2 class="country__title">Чехия</h2>
+                  <span class="country__slogan">Закоулки старой Европы</span>
+                </div>
+                <span class="country__tourists">5326</span>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <a href="" class="button countries__button">Показать все</a>
+      </section>
+      <section class="travelmates">
+        <h2 class="travelmates__title">Попутчики</h2>
+        <p class="travelmates__text">Все мы индивидуальны и у каждого свой
+          взгляд на идеальный отдых. Одному нужен пляж и коктейль, а
+          другому маршрут для хайкинга.
+        </p>
+        <b class="travelmates__text">Теперь можно легко найти единомышленников!</b>
+        <ul class="travelmates__list">
+          <li class="travelmates__item">
+            <article class="traveler traveler--tanya-firsova">
+              <img class="traveler__photo" src="img/tanya-firsova.jpg" width="270" height="270" alt="Таня Фирсова нежится под солнцем на лазурных волнах">
+              <img class="traveler__rating" src="img/tanya-firsova-rating.png" width="60" height="60" alt="Рейтинг Тани Фирсовой - 99">
+              <ul class="places">
+                <li class="places__item">
+                  <img class="places__item--sri-lanka" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
+                </li>
+                <li class="places__item">
+                  <img class="places__item--thailand" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
+                </li>
+                <li class="places__item">
+                  <img class="places__item--seyshelles" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
+                </li>
+              </ul>
+              <div class="travelmates__wrapper">
+                <div class="travelmates__name-wrapper">
+                  <span class="travelmates__status travelmate__status--offline"></span>
+                  <span class="travelmates__name">Таня Фирсова</span>
+                </div>
+                <p class="travelmates__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              </div>
+              <div class="travelemates__pics-wrapper">
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка автобуса в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка самолета в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка велосипеда в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка человечка в формате svg-->
+                </span>
+              </div>
+            </article>
+          </li>
+          <li class="travelmates__item">
+            <article class="traveler traveler--petya-demin">
+              <img class="traveler__photo" src="img/petya-demin.jpg" width="270" height="270" alt="Петя Демин на фоне заснеженных гор">
+              <img class="traveler__rating" src="img/petya-demin-rating.png" width="60" height="60" alt="Рейтинг Пети Демина - 80">
+              <ul class="places">
+                <li class="places__item">
+                  <img class="places__item--belgium" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
+                </li>
+                <li class="places__item">
+                  <img class="places__item--czech" src="img/szceh-flag.png" width="88" height="35" alt="Государственный флаг Чешской Респудлики">
+                </li>
+              </ul>
+              <div class="travelmates__wrapper">
+                <div class="travelmates__name-wrapper">
+                  <span class="travelmates__status travelmate__status--online"></span>
+                  <span class="travelmates__name">Петя Демин</span>
+                </div>
+                <p class="travelmates__tags">#бургер #бар #футбол #концерт #крафт</p>
+              </div>
+              <div class="travelemates__pics-wrapper">
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка автобуса в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка самолета в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка велосипеда в формате svg-->
+                </span>
+                <span class="travelmates__pics">
+                  <!--здесь будет иконка человечка в формате svg-->
+                </span>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="buisiness-offer">
+        <h2 class="buisiness-offer__title">Добавьте свой профиль</h2>
+        <ul class="buisiness-offer__list rates-list">
+          <li class="rates-list__item">
+            <span class="rates-list__item-text">Базовое размещение</span>
+            <span class="rates-list__item-text">Бесплатно</span>
+          </li>
+          <li class="rates-list__item">
+            <span class="rates-list__item-text">Вывод на первых позициях</span>
+            <span class="rates-list__item-text">99 руб./мес</span>
+          </li>
+          <li class="rates-list__item">
+            <span class="rates-list__item-text">Кастомный цыет карточки</span>
+            <span class="rates-list__item-text">59 руб./месяц</span>
+          </li>
+        </ul>
+        <a class="buisiness-offer__link" href="rates.html">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="registration-form">
+        <!--Будет сверстано в следующем задании -->
+      </section>
+      <div class="map">
+        <!-- Сверстаю в следующем задании -->
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="logo">Погнали?</a>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook-footer" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
+            <svg>Здесь будет инконка фейсбука</svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk-footer" href="https://vk.com" aria-label="Присоединяйтесь к нам во Вконтакте">
+            <svg>Здесь будет иконка Вконтакте</svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram-footer" href="htpps://instagram.com" aria-label="Присоединяйтесь к нам в Инстаграме">
+            <svg>Здесь будет ионка Инстаграма</svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__developer-text">Разработано</span>
+        <img class="page-footer__developer-logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
+    </footer>
   </body>
 </html>
