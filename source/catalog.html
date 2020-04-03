@@ -47,8 +47,249 @@
     <main class="page-main">
       <section class="filter">
         <h1 class="filter__title">Попутчики</h1>
-        <p class="filter__text">Фильтрация по странам</p>
-        <!--Секция будет сверстана в следующем задании -->
+        <div class="filter__countries-wrapper">
+          <span class="filter__countries-button">Фильтрация по странам</span>
+          <button class="filter__countries-close" type="button" aria-label="Свернуть фильтр"></button>
+        </div>
+        <div class="filter__wrapper">
+          <ul class="filter__side-world side-world__list">
+            <li class="side-world__item">
+              <a class="side-world__link side-world__link--active" href="europe.html">Европа</a>
+            </li>
+            <li class="side-world__item">
+              <a class="side-world__link" href="asia.html">Азия</a>
+            </li>
+            <li class="side-world__item">
+              <a class="side-world__link" href="america.html">Америка</a>
+            </li>
+            <li class="side-world__item">
+              <a class="side-world__link" href="isles.html">Острова</a>
+            </li>
+          </ul>
+          <div class="filter__sorter-wrapper">
+            <ul class="filter__sorter sorter">
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">А</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Б</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">В</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Г</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Д</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Е</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">З</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">И</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">К</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Л</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">М</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Н</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">О</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">П</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Р</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">С</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Т</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">У</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Ф</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Х</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Ц</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Ч</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Ш</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Э</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Ю</a>
+              </li>
+              <li class="sorter__item">
+                <a class="sorter__link" href="#">Я</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <a class="filter__link" href="europe/australia.html">Австралия</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/austria.html">Австрия</a></li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/azerbaijan.html">Азербайджан</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/albania.html">Албания</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/algerian.html">Алжир</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/angola.html">Ангола</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/andorra.html">Андорра</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/antigua-and-barbuda.html">Антигуа и Барбуда</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/argentine.html">Аргентина</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/armenia.html">Армения</a>
+            </li>
+            <li class="filter__item">
+              <a class="filter__link" href="europe/afghanistane.html">Афганистан</a>
+            </li>
+          </ul>
+          <button class="filter__button-close">Свернуть</button>
+        </div>
+      </section>
+      <section class="filter-companions">
+        <h2 class="filter-companions__title">Подберите идеального попутчика</h2>
+        <form class="filter-companions__form filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__legend">
+              <a class="filter-form__link" href="#">Хобби</a>
+            </legend>
+            <div class="filter-form__wrapper">
+              <ul class="filter-form__list">
+                <!--тут должно быть содержимое блока -->
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__legend">
+              <a class="filter-form__link" href="#">Музыка</a>
+            </legend>
+            <div class="filter-form__wrapper">
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <label class="checkbox__label">
+                    <span class="checkbox__name">Тяжелый рок</span>
+                    <input class="checkbox" type="checkbox" name="music" value="hard-rock" checked>
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label>
+                    <span class="checkbox__name">Русский рэп</span>
+                    <input class="checkbox" type="checkbox" name="music" value="russian-rock">
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label>
+                    <span class="checkbox__name">Евроденс</span>
+                    <input class="checkbox" type="checkbox" name="music" value="eurodance">
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__legend">
+              <a class="filter-form__link" href="#">Еда</a>
+            </legend>
+            <div class="filter-form__wrapper">
+              <ul class="flter-form__list">
+                <!-- тут должно быть содержимое блока -->
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__legend">
+              <a class="filter-form__link" href="#">Транспорт</a>
+            </legend>
+            <div class="filter-form__wrapper">
+              <ul class="filter-form__list">
+                <li class="filter-form__item">
+                  <label class="transport__label" aria-label="Добраться самолетом">
+                    <input class="visually-hidden transport transport--airbus" type="checkbox" name="transport" value="airbus" checked>
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="transport__label" aria-label="Добраться автобусом">
+                    <input class="visually-hidden transport transport--bus" type="checkbox" name="transport" value="bus" checked>
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="transport__label" aria-label="Добраться на велосипеде">
+                    <input class="visually-hidden transport transport--bicycle" type="checkbox" name="transport" value="bicycle">
+                  </label>
+                </li>
+                <li class="filter-form__item">
+                  <label class="transport__label" aria-label="Добраться пешком">
+                    <input class="visually-hidden transport transport--on-foot" type="checkbox" name="transport" value="on-foot" checked>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="filter-form__block">
+            <legend class="filter-form__legens">
+              <a class="filter-form__link" href="#">Левел</a>
+            </legend>
+            <div class="filter-form__wrapper">
+              <div class="filter-form__range range">
+                <div class="range__levels">
+                  <label class="range__min-level">от
+                    <input class="range__input" type="text" name="min-level" value="0">
+                  </label>
+                  <label class="range__max-level">до
+                    <input class="range__input" type="text" name="max-level" value="100">
+                  </label>
+                </div>
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle--min" aria-label="Задайте минимальный уровень"></div>
+                  <div class="range__toggle range__toggle--max" aria-label="Задайте максимальный уровень"></div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button button--companion" type="submit">Показать</button>
+        </form>
       </section>
       <section class="suitable-companions">
         <h2 class="visually-hidden">Подходящие Вам попутчики</h2>
