@@ -46,7 +46,471 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__title">Направления</h1>
-    <!--Разделы будут сверстаны в следующем задании-->
+      <form class="filter-form user-form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="user-form__user user">
+          <h2 class="visually-hidden">Основные сведения о пользователе</h2>
+          <div class="user__info-wrapper traveler">
+            <div class="traveler__rating-wrapper">
+              <div class="traveler__level-wrapper">
+                <div class="traveler__level-bar">
+                  <div class="traveler__level-text-wrapper">
+                    <span class="traveler__level-number">80</span>
+                    <span class="traveler__level-text">level</span>
+                  </div>
+                  <svg><!--картинка для прогресс-бара--></svg>
+                </div>
+              </div>
+            </div>
+            <img class="traveler__info-photo" src="img/petya-demin-pict.jpg" width="100" height="100" alt="Фотография Пети Демина">
+          </div>
+          <label class="user__input-label">
+            <span class="user__input-text">Сменить фото</span>
+            <input class="user__input" type="file">
+          </label>
+          <label class="user__tags-wrapper">
+            <textarea class="user__tags" name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+          </label>
+          <fieldset class="filter-form__block user__fieldset user__fieldset--user">
+            <legend class="filter-form__legend filter-form__legend--user-card">Транспорт</legend>
+            <div class="filter-form__wrapper">
+              <ul class="filter-form__list">
+                <li class="filter-form__item transport">
+                  <label class="transport__label transport__label--airbus" aria-label="Добраться самолетом">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="airbus" checked>
+                  </label>
+                </li>
+                <li class="filter-form__item transport">
+                  <label class="transport__label transport__label--bus" aria-label="Добраться автобусом">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="bus" checked>
+                  </label>
+                </li>
+                <li class="filter-form__item transport">
+                  <label class="transport__label transport__label--bicycle" aria-label="Добраться на велосипеде">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
+                  </label>
+                </li>
+                <li class="filter-form__item transport">
+                  <label class="transport__label transpotr__label--on-foot" aria-label="Добраться пешком">
+                    <input class="visually-hidden" type="checkbox" name="transport" value="on-foot" checked>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </section>
+        <section class="user-form__destination destination">
+          <h2 class="destination__title">Мои планы:</h2>
+          <ul class="destination__list">
+            <li class="destination__item">
+              <span class="destination__countries">1. Франция, Италия</span>
+              <span class="destination__companions">3 попутчика</span>
+              <span class="dsetination__dates">26 мар - 29 мар</span>
+              <a class="destination__button" href="changeplans.html">Изменить</a>
+            </li>
+            <li class="destination__item">
+              <span class="destination__countries">2. Таиланд, Индонезия</span>
+              <span class="destination__companions">1 попутчик</span>
+              <span class="dsetination__dates">1 июл - 15 июл</span>
+              <a class="destination__button" href="changeplans.html">Изменить</a>
+            </li>
+          </ul>
+        </section>
+        <section class="user-form__plans plans">
+          <h2 class="plans__title">Добавить план</h2>
+          <ul class="plans__steps steps">
+            <li class="steps__item">
+              <span class="steps__marker" aria-label="Шаг первый"></span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__marker" aria-label="Шаг второй"></span>
+            </li>
+            <li class="steps__item">
+              <span class="steps__marker" aria-label="Шаг третий"></span>
+            </li>
+          </ul>
+          <ul class="plans__steps-list steps-list">
+            <li class="steps-list__item">
+              <section class="steps-list__block block">
+                <h3 class="block__title" id="step1">Шаг 1.</h3>
+                <span class="block__description">Даты пребывания</span>
+                <p class="block__text">
+                  Укажите предпочтительное количество попутчиков,
+                  которых
+                  вы хотели бы позвать в поездку и ее предполагаемую длительность.
+                </p>
+                <div class="block__input-wrapper input">
+                  <div class="input__title-wrapper">
+                    <span class="input__title">Ищу попутчиков:</span>
+                    <span class="input__sign">чел.</span>
+                    <div class="input__wrapper">
+                      <button class="input__button-number input__button-number--minus" type="button" aria-label="Уменьшить количество"></button>
+                      <label class="input__label">
+                        <input class="input__amount" type="text" name="companions" value="2">
+                      </label>
+                      <button class="input__button-number input__button-number--plus" type="button" aria-label="Увеличить количество"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="block__input-wrapper input">
+                  <div class="input__title-wrapper">
+                    <span class="input__title">Длительность:</span>
+                    <span class="input__sign">дн.</span>
+                    <div class="input__wrapper">
+                      <button class="input__button-number input__button-number--minus" type="button" aria-label="Уменьшить количество"></button>
+                      <label class="input__label">
+                        <input class="input__amount" type="text" name="duration" value="2">
+                      </label>
+                      <button class="input__button-number input__button-number--plus" type="button" aria-label="Увеличить количество"></button>
+                    </div>
+                  </div>
+                </div>
+                <label class="block__label">
+                  <input class="block__checkbox" type="checkbox" name="chirdren" value="with-children" checked>
+                  Можно с детьми
+                </label>
+                <div class="calendar">
+                  <div class="calendar__date-wrapper">
+                  <button class="calendar__date-button calendar__dаte-button--back" type="button" aria-label="Предыдущий месяц"></button>
+                    <span class="calendar__date-name">Март 2019</span>
+                    <button class="calendar__date-button calendar__dste-button--forward" type="button" aria-label="Следующий месяц"></button>
+                  </div>
+                  <ul class="calendar__weekday">
+                    <li class="calendar__weekday-item" aria-label="Понедельник">П</li>
+                    <li class="calendar__weekday-item" aria-label="Вторник">В</li>
+                    <li class="calendar__weekday-item" aria-label="Среда">С</li>
+                    <li class="calendar__weekday-item" aria-label="Четверг">Ч</li>
+                    <li class="calendar__weekday-item" aria-label="Пятница">П</li>
+                    <li class="calendar__weekday-item" aria-label="Суббота">С</li>
+                    <li class="calendar__weekday-item" aria-label="Воскресенье">В</li>
+                  </ul>
+                  <ul class="calendar__days">
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">23
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="23">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">24
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="24">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">25
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="25">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">26
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="26">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">27
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="27">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">28
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="28">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">1
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="1">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">2
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="2">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">3
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="3">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">4
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="4">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">5
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="5">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">6
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="6">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">7
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="7">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">8
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="8">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">9
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="9">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">10
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="10">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">11
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="11">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">12
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="12">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">13
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="13">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">14
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="14">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">15
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="15">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">16
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="16">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">17
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="17">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">18
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="18">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">19
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="19">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">20
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="20">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">21
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="21">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">22
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="22">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">23
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="23">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">24
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="24">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">25
+                        <input class="visually-hidden" type="checkbox" name="day"  disabled aria-label="Сегодняшнее число" value="25">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">26
+                        <input class="visually-hidden" type="checkbox" name="day"  checked aria-label="Сегодняшнее число" value="26">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">27
+                        <input class="visually-hidden" type="checkbox" name="day"  checked aria-label="Сегодняшнее число" value="27">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">28
+                      <label class="checkbox-day__label">28
+                        <input class="visually-hidden" type="checkbox" name="day"  checked aria-label="Сегодняшнее число" value="28">
+                      </label>
+                      </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">29
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="29">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">30
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="30">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">31
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="31">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">1
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="1">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">2
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="2">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">3
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="3">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">4
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="4">
+                      </label>
+                    </li>
+                    <li class="calendar__days-item checkbox-day">
+                      <label class="checkbox-day__label">5
+                        <input class="visually-hidden" type="checkbox" name="day"  aria-label="Сегодняшнее число" value="5">
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <a class="button steps__button steps__button--forward" href="#step2">Следующий шаг</a>
+              </section>
+            </li>
+            <li class="steps-list__item">
+              <section class="steps-list__block block">
+                <h3 class="block__title" id="step2">Шаг 2.</h3>
+                <span class="block__description">Маршрут</span>
+                <p class="block__text">
+                  Укажите страны, которые вы хотели посетить.
+                  Это может быть одна или сразу несколько.
+                </p>
+                <div class="block__routes routes">
+                  <div class="routes__item">
+                    <div class="routes__item-wrapper select-route">
+                      <div class="select-route__item">
+                        <input class="select-route__name" type="text" name="country" value="Босния и Герцоговина">
+                        <button class="select-route__roll" type="button" aria-label="Развернуть список возможных стран"></button>
+                        <div class="select-route__flag-wrapper">
+                          <img class="select-route__flag" src="img/bosnia-flag.png" width="35" height="24" alt="Государственный флаг Боснии и Герцоговины">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="routes__button routes__button--delete" type="button" aria-label="Удалить этот пункт"></button>
+                  </div>
+                  <div class="routes__item">
+                    <div class="routes__item-wrapper select-route">
+                      <div class="select-route__item">
+                        <input class="select-route__name" type="text" name="country" value="Чехия">
+                        <button class="select-route__roll" type="button" aria-label="Развернуть список возможных стран"></button>
+                        <div class="select-route__flag-wrapper">
+                          <img class="select-route__flag" src="img/czech-flag.png" width="35" height="24" alt="Государственный флаг Чешской Республики">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="routes__button routes__button--delete" type="button" aria-label="Удалить этот пункт"></button>
+                  </div>
+                  <div class="routes__item">
+                    <div class="routes__item-wrapper select-route">
+                      <div class="select-route__item">
+                        <input class="select-route__name select-route__name--choose" type="text" name="country" value="Выберите страну">
+                        <button class="select-route__roll" type="button" aria-label="Развернуть список возможных стран"></button>
+                        <section class="select-route__dropdown dropdown dropdown--invisible">
+                          <h5 class="visually-hidden">Выберите страну для своего маршрута</h5>
+                          <div class="dropdown__wrapper">
+                            <ul class="dropdown__side-world side-world">
+                              <li class="side-world__item">
+                                <a class="side-world__link side-world__link--active" href="europe.html">Европа</a>
+                              </li>
+                              <li class="side-world__item">
+                                <a class="side-world__link" href="asia.html">Азия</a>
+                              </li>
+                              <li class="side-world__item">
+                                <a class="side-world__link" href="america.html">Америка</a>
+                              </li>
+                              <li class="side-world__item">
+                                <a class="side-world__link" href="isles.html">Острова</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <button class="routes__button routes__button--delete" type="button" aria-label="Удалить этот пункт"></button>
+                  </div>
+                  <div class="routes__item">
+                    <button class="routes__button routes__button--add" type="button">Добавить страну</button>
+                  </div>
+                </div>
+                <a class="button steps__button steps__button--forward" href="#step3">Следующий шаг</a>
+                <a class="button  steps__button steps__button--back" href="#step1">На шаг назад</a>
+              </section>
+            </li>
+            <li class="steps-list__item">
+              <section class="step-list__block block">
+                <h3 class="block__title" id="step3">Шаг 3.</h3>
+                <span class="block__description">Развлечения</span>
+                <p class="block__text">
+                  Наконец, расскажите о своих планах времяпровождения.
+                  Можно писать в свободной форме и ставить тэги.
+                </p>
+                <ul class="block__action-plan action-plan">
+                  <li class="action-plan__item">
+                    <div class="action-plan__country-wrapper">
+                      <span class="action-plan__country">Босния и герцоговина</span>
+                      <div class="action-plan__image-wrapper">
+                        <img class="action-plan__image" src="img/bosnia-flag.png" width="35" height="24" alt="Государственный флаг Боснии и Герцоговины">
+                      </div>
+                    </div>
+                    <label class="action-plan__description">
+                      <textarea class="action-plan__text" name="action-plan-text" cols="30" rows="10" placeholder="План действий"></textarea>
+                    </label>
+                  </li>
+                  <li class="action-plan__item">
+                    <div class="action-plan__country-wrapper">
+                      <span class="action-plan__country">Чехия</span>
+                      <div class="action-plan__image-wrapper">
+                        <img class="action-plan__image" src="img/czech-flag.png" width="35" height="24" alt="Государственный флаг Чешской Республики">
+                      </div>
+                    </div>
+                    <label class="action-plan__description">
+                      <textarea class="action-plan__text" name="action-plan-text" cols="30" rows="10" placeholder="План действий">Пить
+                      пиво и лазить
+                      по старым замкам, наслаждаться архитектурой
+                      и вот это все.
+                      </textarea>
+                    </label>
+                  </li>
+                </ul>
+              </section>
+            </li>
+          </ul>
+          <button class="button" type="submit">Отправить</button>
+          <a class="button  steps__button steps__button--back" href="#step2">На шаг назад</a>
+        </section>
+      </form>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">Погнали?</a>
