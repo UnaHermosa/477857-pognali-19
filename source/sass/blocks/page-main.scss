@@ -1,0 +1,15 @@
+.page-main__title {
+  margin: 0;
+  padding-bottom: 270px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
+  background-size: auto,
+    cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 120px 140px,
+    0 -150px;
+}

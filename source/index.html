@@ -2,17 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Погнали</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo">Погнали?</a>
+      <a class="page-header__logo logo">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип ресурса для поиска попутчиков 'Погнали?'">
+      </a>
       <nav class="main-nav main-nav--closed main-nav--scroll">
         <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">О сервисе</a></li>
-          <li class="main-nav__item"><a href="form.html">Направления</a></li>
-          <li class="main-nav__item"><a href="catalog.html">Попутчики</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О сервисе</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Попутчики</a>
+          </li>
         </ul>
       </nav>
       <ul class="user-menu">
@@ -55,7 +65,7 @@
           <cite class="slogan__author">Мурат Эльтазин главный редактор газеты &laquo;гаджетлайф&raquo;</cite>
         </blockquote>
         <ul class="introduction__steps steps">
-          <li class="steps__item steps__item--first">
+          <li class="steps__item">
             <p class="steps__description">Выберите направление</p>
             <span class="steps__number">1</span>
           </li>
@@ -79,10 +89,10 @@
           с попутчиками, которые на одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <b class="about-us__text">А если найдете кого-то
+        <p class="about-us__text about-us__text--bold">А если найдете кого-то
           близкого по духу — скорее
           зовите в совместный трип!
-        </b>
+        </p>
       </section>
       <section class="countries">
         <h2 class="countries__title">Направления</h2>
@@ -94,7 +104,7 @@
         <ul class="countries__list">
           <li class="countries__item">
             <article class="country">
-              <img class="country__image" src="img/thailand.jpg" width="270" height="110" alt="Вид на прекрасный пляж Тайланда">
+              <img class="country__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Вид на прекрасный пляж Тайланда">
               <img class="country__flag" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Королевства Тайланда">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
@@ -107,7 +117,7 @@
           </li>
           <li class="countries__item">
             <article class="country">
-              <img class="country__image" src="img/france.jpg" width="270" height="110" alt="Улочки Франции">
+              <img class="country__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Улочки Франции">
               <img class="country__flag" src="img/france-flag.png" width="88" height="35" alt="Государственный флаг Республики Франция">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
@@ -120,7 +130,7 @@
           </li>
           <li class="countries__item">
             <article class="country">
-              <img class="country__image" src="img/czech.jpg" width="270" height="110" alt="Мост через реку в Чехии">
+              <img class="country__image" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Мост через реку в Чехии">
               <img class="country__flag" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
               <div class="country__wrapper">
                 <div class="country__wrapper-group">
@@ -140,11 +150,11 @@
           взгляд на идеальный отдых. Одному нужен пляж и коктейль, а
           другому маршрут для хайкинга.
         </p>
-        <b class="travelmates__text">Теперь можно легко найти единомышленников!</b>
+        <p class="travelmates__text"><b>Теперь можно легко найти единомышленников!</b></p>
         <ul class="travelmates__list">
           <li class="travelmates__item">
             <article class="traveler">
-              <img class="traveler__photo" src="img/tanya-firsova.jpg" width="270" height="270" alt="Таня Фирсова нежится под солнцем на лазурных волнах">
+              <img class="traveler__photo" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="Таня Фирсова нежится под солнцем на лазурных волнах">
               <div class="traveler__level-wrapper">
                 <div class="traveler__level-bar">
                   <div class="traveler__level-text-wrapper">
@@ -190,7 +200,7 @@
           </li>
           <li class="travelmates__item">
             <article class="traveler">
-              <img class="traveler__photo" src="img/petya-demin.jpg" width="270" height="270" alt="Петя Демин на фоне заснеженных гор">
+              <img class="traveler__photo" src="img/demin-mobile@1x.jpg" width="270" height="270" alt="Петя Демин на фоне заснеженных гор">
               <div class="traveler__level-wrapper">
                 <div class="traveler__level-bar">
                   <div class="traveler__level-text-wrapper">
@@ -232,6 +242,7 @@
             </article>
           </li>
         </ul>
+        <a class="button" href="#">Показать всех</a>
       </section>
       <section class="buisiness-offer">
         <h2 class="buisiness-offer__title">Добавьте свой профиль</h2>
@@ -266,8 +277,8 @@
         </form>
         <p class="join-us__clarify">Остались вопросы?<br>
             Мы с радостью на них ответим!</p>
-        <a class="join-us__button button button--phone" href="tel:88005558628" aria-label="Нажмите, чтобы позвонить нам">8 800 555-86-28</a>
-        <a class="join-us__button button button--email" href="mailto:mail@htmlacademy.ru" aria-label="Нажмите, чтобы связаться с нами по электронной почте">mail@htmlacademy.ru</a>
+        <a class="join-us__button button button--phone button--phone-lite" href="tel:88005558628" aria-label="Нажмите, чтобы позвонить нам">8 800 555-86-28</a>
+        <a class="join-us__button button button--email button--email-lite" href="mailto:mail@htmlacademy.ru" aria-label="Нажмите, чтобы связаться с нами по электронной почте">mail@htmlacademy.ru</a>
       </section>
       <section class="address">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -277,7 +288,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo">Погнали?</a>
+      <a class="page-footer__logo logo">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип ресурса для поиска попутчиков 'Погнали?'">
+      </a>
       <ul class="page-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--facebook-footer" href="https://facebook.com" aria-label="Присоединяйтесь к нам в Фейсбуке">
@@ -303,17 +316,17 @@
 
     <section class="buisiness-rates modal">
       <h2 class="buisiness-rates__title">Бизнес тарифы</h2>
-      <ul class="buisines-rates__list">
-        <li class="buisiness-rates-item">Реклама у блоггера
+      <ul class="buisiness-rates__list">
+        <li class="buisiness-rates__item">Реклама у блоггера
           300 000 руб./пост
         </li>
-        <li class="buisiness-rates-item">Накрутка подписчиков
+        <li class="buisiness-rates__item">Накрутка подписчиков
           от 1 руб./шт.
         </li>
-        <li class="buisiness-rates-item">Лайки от ботов
+        <li class="buisiness-rates__item">Лайки от ботов
           от 20 коп./лайк
         </li>
-        <li class="buisiness-rates-item">Ваш продакт-плейсмент
+        <li class="buisiness-rates__item">Ваш продакт-плейсмент
           Индивидуально
         </li>
       </ul>

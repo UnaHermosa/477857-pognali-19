@@ -1,0 +1,47 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 24px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+  border-radius: 10px;
+
+  &--login {
+    padding: 18px 0;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 25px;
+    color: #161c35;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &--phone,
+  &--email {
+  padding: 11px 12px;
+  font-size: 16px;
+  line-height: 22px;
+    background: none;
+    padding-left: 60px;
+    color: #192144;
+    text-transform: uppercase;
+  }
+
+  &--phone-lite,
+  &--email-lite {
+    color: #ffd74b;
+  }
+
+  &--join {
+    border: none;
+    padding: 30px 31px;
+  }
+
+  &--route {
+    border: 3px solid #192144;
+    border-radius: 10px;
+  }
+}

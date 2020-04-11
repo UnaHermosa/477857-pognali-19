@@ -1,0 +1,24 @@
+.rates-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rates-list__item {
+  padding: 15px 45px 25px 18px;
+  color: #444444;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rates-list__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rates-list__item-text {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.rates-list__item-text:nth-child(2n) {
+  margin-bottom: 0;
+}
