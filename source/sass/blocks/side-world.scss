@@ -1,0 +1,21 @@
+.side-world {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side-world__item {
+  margin-bottom: 15px;
+}
+
+.side-world__item:last-child {
+  margin-bottom: 0;
+}
+
+.side-world__link {
+  color: #a5aabd;
+
+  &--active {
+    color: #192144;
+  }
+}

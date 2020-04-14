@@ -1,0 +1,30 @@
+.filter-form__block {
+  margin: 0;
+  padding: 14px 0;
+  line-height: 18px;
+  font-weight: 700;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.filter-form__legend {
+  padding: 0;
+}
+
+.filter-form__link {
+  color: #1d2e5b;
+}
+
+.filter-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-form__item {
+  margin-bottom: 14px;
+}
+
+.filter-form__item:last-child {
+  margin-bottom: 0;
+}

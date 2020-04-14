@@ -1,0 +1,30 @@
+.sorter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorter__item {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &--active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
+}
+
+.sorter__link {
+  color: #1d2e5b;
+
+  &--active {
+    color: #ffffff;
+  }
+}
+
+.sorter__sublist--hidden {
+  display: none;
+}

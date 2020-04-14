@@ -1,0 +1,30 @@
+.filter {
+  padding: 20px 25px;
+  font-weight: 700;
+  background-color: #e2e5f2;
+  color: #192144;
+  text-transform: uppercase;
+}
+
+.filter__countries-button {
+  display: block;
+  padding-left: 27px;
+  margin-bottom: 20px;
+}
+
+.filter__wrapper {
+  padding: 0 25px 0;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.filter__side-world {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.filter__sorter {
+  margin-bottom: 30px;
+}

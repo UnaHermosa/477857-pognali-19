@@ -2,17 +2,27 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Выбери своего попутчика</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">Погнали?</a>
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Логотип ресурса для поиска попутчиков 'Погнали?'">
+      </a>
       <nav class="main-nav main-nav--closed main-nav--scroll">
         <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">О сервисе</a></li>
-          <li class="main-nav__item"><a href="form.html">Направления</a></li>
-          <li class="main-nav__item"><a>Попутчики</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О сервисе</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Попутчики</a>
+          </li>
         </ul>
       </nav>
       <ul class="user-menu">
@@ -52,7 +62,7 @@
           <span class="filter__countries-button">Фильтрация по странам</span>
           <button class="filter__countries-close" type="button" aria-label="Свернуть фильтр"></button>
         </div>
-        <div class="filter__wrapper">
+        <div class="filter__wrapper filter__wrapper--hidden">
           <ul class="filter__side-world side-world">
             <li class="side-world__item">
               <a class="side-world__link side-world__link--active" href="europe.html">Европа</a>
@@ -68,8 +78,8 @@
             </li>
           </ul>
           <ul class="filter__sorter sorter">
-            <li class="sorter__item">
-              <a class="sorter__link" href="#">А</a>
+            <li class="sorter__item sorter__item--active">
+              <a class="sorter__link sorter__link--active" href="#">А</a>
               <ul class="sorter__sublsit countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/australia.html">Австралия</a>
@@ -108,7 +118,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Б</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/bahamas.html">Багамские острова</a>
                 </li>
@@ -167,7 +177,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">В</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/vanuatu.html">Вануату</a>
                 </li>
@@ -190,7 +200,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Г</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/gabon.html">Габон</a>
                 </li>
@@ -234,7 +244,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Д</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/denmark.html">Дания</a>
                 </li>
@@ -251,7 +261,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Е</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/egypt.html">Египет</a>
                 </li>
@@ -259,7 +269,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">З</a>
-              <ul class="sorter__sublsit countries-list">
+              <ul class="sorter__sublsit sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/zambia.html">Замбия</a>
                 </li>
@@ -270,7 +280,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">И</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/israel.html">Израиль</a>
                 </li>
@@ -305,7 +315,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">К</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/cape-verde.html">Кабо-Верде</a>
                 </li>
@@ -346,7 +356,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Л</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/laos.html">Лаос</a>
                 </li>
@@ -378,7 +388,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">М</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/mauritius.html">Маврикий</a>
                 </li>
@@ -410,7 +420,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Н</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/namibia.html">Намибия</a>
                 </li>
@@ -442,7 +452,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">О</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/uae.html">ОАЭ</a>
                 </li>
@@ -453,7 +463,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">П</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/pakistan.html">Пакистан</a>
                 </li>
@@ -482,7 +492,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Р</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/rwanda.html">Руанда</a>
                 </li>
@@ -496,7 +506,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">С</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/salvador.html">Сальвадор</a>
                 </li>
@@ -537,7 +547,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Т</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/tajikistan.html">Таджикистан</a>
                 </li>
@@ -572,7 +582,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">У</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/uganda.html">Уганда</a>
                 </li>
@@ -589,7 +599,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Ф</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/fiji.html">Фиджи</a>
                 </li>
@@ -606,7 +616,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Х</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/croatia.html">Хорватия</a>
                 </li>
@@ -614,7 +624,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Ч</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/chad.html">Чад</a>
                 </li>
@@ -631,7 +641,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Ш</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/switzerland.html">Швейцария</a>
                 </li>
@@ -645,7 +655,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Э</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/ecuador.html">Эквадор</a>
                 </li>
@@ -665,7 +675,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Ю</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/sa.html">ЮАР</a>
                 </li>
@@ -676,7 +686,7 @@
             </li>
             <li class="sorter__item sorter__item--hidden">
               <a class="sorter__link" href="#">Я</a>
-              <ul class="sorter__sublist countries-list">
+              <ul class="sorter__sublist sorter__sublist--hidden countries-list">
                 <li class="countries-list__item">
                   <a class="countries-list__link" href="europe/jamaica.html">Ямайка</a>
                 </li>
@@ -686,351 +696,353 @@
               </ul>
             </li>
           </ul>
-          <button class="filter__button-close">Свернуть</button>
+          <button class="filter__button-close button button--filter-close">Свернуть</button>
         </div>
       </section>
-      <section class="filter-companions">
-        <h2 class="filter-companions__title">Подберите идеального попутчика</h2>
-        <form class="filter-companions__form filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__legend">
-              <a class="filter-form__link" href="#">Хобби</a>
-            </legend>
-            <div class="filter-form__wrapper">
-              <ul class="filter-form__list">
-                <!--тут должно быть содержимое блока -->
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__legend">
-              <a class="filter-form__link" href="#">Музыка</a>
-            </legend>
-            <div class="filter-form__wrapper">
-              <ul class="filter-form__list checkbox">
-                <li class="filter-form__item">
-                  <label class="checkbox__label">
-                    <span class="checkbox__name">Тяжелый рок</span>
-                    <input class="checkbox__input" type="checkbox" name="music" value="hard-rock" checked>
-                  </label>
-                </li>
-                <li class="filter-form__item checkbox">
-                  <label>
-                    <span class="checkbox__name">Русский рэп</span>
-                    <input class="checkbox__input" type="checkbox" name="music" value="russian-rock">
-                  </label>
-                </li>
-                <li class="filter-form__item checkbox">
-                  <label>
-                    <span class="checkbox__name">Евроденс</span>
-                    <input class="checkbox__input" type="checkbox" name="music" value="eurodance">
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__legend">
-              <a class="filter-form__link" href="#">Еда</a>
-            </legend>
-            <div class="filter-form__wrapper">
-              <ul class="flter-form__list">
+      <div class="catalog-wrapper">
+        <section class="filter-companions">
+          <h2 class="filter-companions__title">Подберите идеального попутчика</h2>
+          <form class="filter-companions__form filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filter-form__block">
+              <legend class="filter-form__legend">
+                <a class="filter-form__link" href="#">Хобби</a>
+              </legend>
+              <div class="filter-form__wrapper">
+                <ul class="filter-form__list">
+                  <!--тут должно быть содержимое блока -->
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__block">
+              <legend class="filter-form__legend">
+                <a class="filter-form__link" href="#">Музыка</a>
+              </legend>
+              <div class="filter-form__wrapper">
+                <ul class="filter-form__list checkbox">
+                  <li class="filter-form__item">
+                    <label class="checkbox__label">
+                      <span class="checkbox__name">Тяжелый рок</span>
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="music" value="hard-rock" checked>
+                    </label>
+                  </li>
+                  <li class="filter-form__item checkbox">
+                    <label>
+                      <span class="checkbox__name">Русский рэп</span>
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="music" value="russian-rock">
+                    </label>
+                  </li>
+                  <li class="filter-form__item checkbox">
+                    <label>
+                      <span class="checkbox__name">Евроденс</span>
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="music" value="eurodance">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__block">
+              <legend class="filter-form__legend">
+                <a class="filter-form__link" href="#">Еда</a>
+              </legend>
+              <div class="filter-form__wrapper">
+                <ul class="flter-form__list">
                 <!-- тут должно быть содержимое блока -->
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__legend">
-              <a class="filter-form__link" href="#">Транспорт</a>
-            </legend>
-            <div class="filter-form__wrapper">
-              <ul class="filter-form__list">
-                <li class="filter-form__item transport">
-                  <label class="transport__label transport__label--airbus" aria-label="Добраться самолетом">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="airbus" checked>
-                  </label>
-                </li>
-                <li class="filter-form__item transport">
-                  <label class="transport__label transport__label--bus" aria-label="Добраться автобусом">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="bus" checked>
-                  </label>
-                </li>
-                <li class="filter-form__item transport">
-                  <label class="transport__label transport__label--bicycle" aria-label="Добраться на велосипеде">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
-                  </label>
-                </li>
-                <li class="filter-form__item transport">
-                  <label class="transport__label transport__label--on-foot" aria-label="Добраться пешком">
-                    <input class="visually-hidden" type="checkbox" name="transport" value="on-foot" checked>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <fieldset class="filter-form__block">
-            <legend class="filter-form__legend">
-              <a class="filter-form__link" href="#">Левел</a>
-            </legend>
-            <div class="filter-form__wrapper">
-              <div class="filter-form__range range">
-                <div class="range__levels">
-                  <label class="range__min-level">от
-                    <input class="range__input" type="text" name="min-level" value="0">
-                  </label>
-                  <label class="range__max-level">до
-                    <input class="range__input" type="text" name="max-level" value="100">
-                  </label>
-                </div>
-                <div class="range__controls">
-                  <div class="range__scale">
-                    <div class="range__bar"></div>
-                  </div>
-                  <div class="range__toggle range__toggle--min" aria-label="Задайте минимальный уровень"></div>
-                  <div class="range__toggle range__toggle--max" aria-label="Задайте максимальный уровень"></div>
-                </div>
+                </ul>
               </div>
-            </div>
-          </fieldset>
-          <button class="button button--companion" type="submit">Показать</button>
-        </form>
-      </section>
-      <section class="suitable-companions">
-        <h2 class="visually-hidden">Подходящие Вам попутчики</h2>
-        <ul class="suitable-companions__list">
-          <li class="suitable-companions__item">
-            <article class="traveler">
-              <h3 class="visually-hidden">Информация о пользователе</h3>
-              <section class="traveler__info">
-                <a class="traveler__info-link" href="tanya-firsova.html">
-                  <h4 class="traveler__name">Таня Фирсова</h4>
-                  <img class="traveler__info-photo" src="img/tanya-firsova-pict.jpg" width="70" height="70" alt="Изображение Тани Фирсовой">
-                </a>
-                <span class="traveler__remoteness">1,5 м</span>
-                <span class="traveler__status traveler__status--offline"></span>
-                <p class="traveler__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              </section>
-              <section class="traveler__wishes">
-                <h4 class="traveler__wishes-title">хочет посетить:</h4>
-                <ul class="traveler__wishes-list places">
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
+            </fieldset>
+            <fieldset class="filter-form__block">
+              <legend class="filter-form__legend">
+                <a class="filter-form__link" href="#">Транспорт</a>
+              </legend>
+              <div class="filter-form__wrapper">
+                <ul class="filter-form__list">
+                  <li class="filter-form__item transport">
+                    <label class="transport__label transport__label--airbus" aria-label="Добраться самолетом">
+                      <input class="visually-hidden" type="checkbox" name="transport" value="airbus" checked>
+                    </label>
                   </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
+                  <li class="filter-form__item transport">
+                    <label class="transport__label transport__label--bus" aria-label="Добраться автобусом">
+                      <input class="visually-hidden" type="checkbox" name="transport" value="bus" checked>
+                    </label>
                   </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
+                  <li class="filter-form__item transport">
+                    <label class="transport__label transport__label--bicycle" aria-label="Добраться на велосипеде">
+                      <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
+                    </label>
+                  </li>
+                  <li class="filter-form__item transport">
+                    <label class="transport__label transport__label--on-foot" aria-label="Добраться пешком">
+                      <input class="visually-hidden" type="checkbox" name="transport" value="on-foot" checked>
+                    </label>
                   </li>
                 </ul>
-              </section>
-              <section class="traveler__way-of-movement">
-                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
-                <div class="traveler__pics-wrapper">
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка автобуса в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка самолета в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка велосипеда в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка человечка в формате svg-->
-                  </span>
-                </div>
-              </section>
-              <div class="traveler__rating-wrapper">
-                <span class="traveler__level">левел:</span>
-                <div class="traveler__level-wrapper">
-                  <div class="traveler__level-bar">
-                    <div class="traveler__level-text-wrapper">
-                      <span class="traveler__level-number">99</span>
-                      <span class="traveler__level-text">level</span>
-                    </div>
-                    <svg><!--картинка для прогресс-бара--></svg>
+              </div>
+            </fieldset>
+            <fieldset class="filter-form__block">
+              <legend class="filter-form__legend">
+                <a class="filter-form__link" href="#">Левел</a>
+              </legend>
+              <div class="filter-form__wrapper">
+                <div class="filter-form__range range">
+                  <div class="range__levels">
+                    <label class="range__min-level">от
+                      <input class="range__input" type="text" name="min-level" value="0">
+                    </label>
+                    <label class="range__max-level">до
+                      <input class="range__input" type="text" name="max-level" value="100">
+                    </label>
                   </div>
+                  <div class="range__controls">
+                    <div class="range__scale">
+                      <div class="range__bar"></div>
+                    </div>
+                    <div class="range__toggle range__toggle--min" aria-label="Задайте минимальный уровень"></div>
+                    <div class="range__toggle range__toggle--max" aria-label="Задайте максимальный уровень"></div>
+                </div>
                 </div>
               </div>
-              <a class="button suitable-companions__more" href="#">Позвать!</a>
-            </article>
-          </li>
-          <li class="suitable-companions__item">
-            <article class="traveler">
-              <h4 class="visually-hidden">Информация о пользователе</h4>
-              <section class="traveler__info">
-                <a class="traveler__info-link" href="petya-demin.html">
-                  <h4 class="traveler__name">Петя Демин</h4>
-                  <img class="traveler__info-photo" src="img/petya-demin-pict.jpg" width="70" height="70" alt="Изображение Пети Демина">
-                </a>
-                <span class="traveler__remoteness">1500</span>
-                <span class="traveler__status traveler__status--offline"></span>
-                <p class="traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
-              </section>
-              <section class="traveler__wishes">
-                <h4 class="traveler__wishes-title">хочет посетить:</h4>
-                <ul class="traveler__wishes-list places">
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
-                  </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
-                  </li>
-                </ul>
-              </section>
-              <section class="traveler__way-of-movement">
-                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
-                <div class="traveler__pics-wrapper">
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка автобуса в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка самолета в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка велосипеда в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка человечка в формате svg-->
-                  </span>
-                </div>
-              </section>
-              <div class="traveler__rating-wrapper">
-                <span class="traveler__level">левел:</span>
-                <div class="traveler__level-wrapper">
-                  <div class="traveler__level-bar">
-                    <div class="traveler__level-text-wrapper">
-                      <span class="traveler__level-number">80</span>
-                      <span class="traveler__level-text">level</span>
+            </fieldset>
+            <button class="button button--companion" type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="suitable-companions">
+          <h2 class="visually-hidden">Подходящие Вам попутчики</h2>
+          <ul class="suitable-companions__list">
+            <li class="suitable-companions__item">
+              <article class="suitable-companions__traveler traveler">
+                <h3 class="visually-hidden">Информация о пользователе</h3>
+                <section class="traveler__info">
+                  <a class="traveler__info-link" href="tanya-firsova.html">
+                    <h4 class="traveler__name">Таня Фирсова</h4>
+                    <img class="traveler__info-photo" src="img/firsova-mobile@1x.jpg" width="70" height="70" alt="Изображение Тани Фирсовой">
+                  </a>
+                  <span class="traveler__remoteness">1,5 м</span>
+                  <span class="traveler__status traveler__status--offline"></span>
+                  <p class="traveler__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                </section>
+                <section class="traveler__wishes">
+                  <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                  <ul class="traveler__wishes-list places">
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/sri-lanka-flag.png" width="88" height="35" alt="Государственный флаг Шри-Ланки">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/thailand-flag.png" width="88" height="35" alt="Государственный флаг Тайланда">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/seyshelles-flag.png" width="88" height="35" alt="Государственный флаг Республики Сейшельские Острова">
+                    </li>
+                  </ul>
+                </section>
+                <section class="traveler__way-of-movement">
+                  <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                  <div class="traveler__pics-wrapper">
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка автобуса в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка самолета в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка велосипеда в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка человечка в формате svg-->
+                    </span>
+                  </div>
+                </section>
+                <div class="traveler__rating-wrapper">
+                  <span class="traveler__level">левел:</span>
+                  <div class="traveler__level-wrapper">
+                    <div class="traveler__level-bar">
+                      <div class="traveler__level-text-wrapper">
+                        <span class="traveler__level-number">99</span>
+                        <span class="traveler__level-text">level</span>
+                      </div>
+                      <svg><!--картинка для прогресс-бара--></svg>
                     </div>
-                    <svg><!--картинка для прогресс-бара--></svg>
                   </div>
                 </div>
-              </div>
-              <a class="button suitable-companions__more" href="#">Позвать!</a>
-            </article>
-          </li>
-          <li class="suitable-companions__item">
-            <article class="traveler">
-              <h3 class="visually-hidden">Информация о пользователе</h3>
-              <section class="traveler__info">
-                <a class="traveler__info-link" href="mark-smolov.html">
-                  <h4 class="traveler__name">Марк Смолов</h4>
-                  <img class="traveler__info-photo" src="img/mark-smolov-pict.jpg" width="70" height="70" alt="Изображение Марка Смолова">
-                </a>
-                <span class="traveler__remoteness">170</span>
-                <span class="traveler__status traveler__status--offline"></span>
-                <p class="traveler__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              </section>
-              <section class="traveler__wishes">
-                <h4 class="traveler__wishes-title">хочет посетить:</h4>
-                <ul class="traveler__wishes-list places">
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/usa-flag.png" width="88" height="35" alt="Государственный флаг Соединенных штатов Америки">
-                  </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/australia-flag.png" width="88" height="35" alt="Государственный флаг Австралии">
-                  </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/dominica-flag.png" width="88" height="35" alt="Государственный флаг Доминики">
-                  </li>
-                </ul>
-              </section>
-              <section class="traveler__way-of-movement">
-                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
-                <div class="traveler__pics-wrapper">
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка автобуса в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка самолета в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка велосипеда в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка человечка в формате svg-->
-                  </span>
-                </div>
-              </section>
-              <div class="rating-wrapper">
-                <span class="traveler__level">левел:</span>
-                <div class="traveler__level-wrapper">
-                  <div class="traveler__level-bar">
-                    <div class="traveler__level-text-wrapper">
-                      <span class="traveler__level-number">25</span>
-                      <span class="traveler__level-text">level</span>
+                <a class="button suitable-companions__more" href="#">Позвать!</a>
+              </article>
+            </li>
+            <li class="suitable-companions__item">
+              <article class="suitable-companions__traveler traveler">
+                <h4 class="visually-hidden">Информация о пользователе</h4>
+                <section class="traveler__info">
+                  <a class="traveler__info-link" href="petya-demin.html">
+                    <h4 class="traveler__name">Петя Демин</h4>
+                    <img class="traveler__info-photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Изображение Пети Демина">
+                  </a>
+                  <span class="traveler__remoteness">1500</span>
+                  <span class="traveler__status traveler__status--offline"></span>
+                  <p class="traveler__tags">#бургер #бар #футбол #концерт #крафт</p>
+                </section>
+                <section class="traveler__wishes">
+                  <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                  <ul class="traveler__wishes-list places">
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/belgium-flag.png" width="88" height="35" alt="Государственный флаг Бельгии">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/czech-flag.png" width="88" height="35" alt="Государственный флаг Чешской Республики">
+                    </li>
+                  </ul>
+                </section>
+                <section class="traveler__way-of-movement">
+                  <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                  <div class="traveler__pics-wrapper">
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка автобуса в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка самолета в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка велосипеда в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка человечка в формате svg-->
+                    </span>
+                  </div>
+                </section>
+                <div class="traveler__rating-wrapper">
+                  <span class="traveler__level">левел:</span>
+                  <div class="traveler__level-wrapper">
+                    <div class="traveler__level-bar">
+                      <div class="traveler__level-text-wrapper">
+                        <span class="traveler__level-number">80</span>
+                        <span class="traveler__level-text">level</span>
+                      </div>
+                      <svg><!--картинка для прогресс-бара--></svg>
                     </div>
-                    <svg><!--картинка для прогресс-бара--></svg>
                   </div>
                 </div>
-              </div>
-              <a class="button suitable-companions__more" href="#">Позвать!</a>
-            </article>
-          </li>
-          <li class="suitable-companions__item">
-            <article class="traveler">
-              <h3 class="visually-hidden">Информация о пользователе</h3>
-              <section class="traveler__info">
-                <a class="traveler__info-link" href="larisa-rogovaya.html">
-                  <h4 class="traveler__name">Лариса Роговая</h4>
-                  <img class="traveler__info-photo" src="img/larisa-rogovaya-pict.jpg" width="70" height="70" alt="Изображение Ларисы Роговой">
-                </a>
-                <span class="traveler__remoteness">23</span>
-                <span class="traveler__status traveler__status--online"></span>
-                <p class="traveler__tags">#образование #карьера #учеба #линкедин</p>
-              </section>
-              <section class="traveler__wishes">
-                <h4 class="traveler__wishes-title">хочет посетить:</h4>
-                <ul class="traveler__wishes-list places">
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/england-flag.png" width="88" height="35" alt="Государственный флаг Королевста Великобритания">
-                  </li>
-                  <li class="traveler__wishes-item places__item">
-                    <img class="places__image" src="img/germany-flag.png" width="88" height="35" alt="Государственный флаг Федеративной Республики Германия">
-                  </li>
-                </ul>
-              </section>
-              <section class="traveler__way-of-movement">
-                <h4 class="traveler__way-of-movement-title">Транспорт</h4>
-                <div class="traveler__pics-wrapper">
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка автобуса в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка самолета в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка велосипеда в формате svg-->
-                  </span>
-                  <span class="traveler__pics">
-                    <!--здесь будет иконка человечка в формате svg-->
-                  </span>
-                </div>
-              </section>
-              <div class="traveler__rating-wrapper">
-                <span class="traveler__level">левел:</span>
-                <div class="traveler__level-wrapper">
-                  <div class="traveler__level-bar">
-                    <div class="traveler__level-text-wrapper">
-                      <span class="traveler__level-number">50</span>
-                      <span class="traveler__level-text">level</span>
+                <a class="button button--suitable-companions" href="#">Позвать!</a>
+              </article>
+            </li>
+            <li class="suitable-companions__item">
+              <article class="suitable-companions__traveler traveler">
+                <h3 class="visually-hidden">Информация о пользователе</h3>
+                <section class="traveler__info">
+                  <a class="traveler__info-link" href="mark-smolov.html">
+                    <h4 class="traveler__name">Марк Смолов</h4>
+                    <img class="traveler__info-photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Изображение Марка Смолова">
+                  </a>
+                  <span class="traveler__remoteness">170</span>
+                  <span class="traveler__status traveler__status--offline"></span>
+                  <p class="traveler__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                </section>
+                <section class="traveler__wishes">
+                  <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                  <ul class="traveler__wishes-list places">
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/usa-flag.png" width="88" height="35" alt="Государственный флаг Соединенных штатов Америки">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/australia-flag.png" width="88" height="35" alt="Государственный флаг Австралии">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/dominica-flag.png" width="88" height="35" alt="Государственный флаг Доминики">
+                    </li>
+                  </ul>
+                </section>
+                <section class="traveler__way-of-movement">
+                  <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                  <div class="traveler__pics-wrapper">
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка автобуса в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка самолета в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка велосипеда в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка человечка в формате svg-->
+                    </span>
+                  </div>
+                </section>
+                <div class="rating-wrapper">
+                  <span class="traveler__level">левел:</span>
+                  <div class="traveler__level-wrapper">
+                    <div class="traveler__level-bar">
+                      <div class="traveler__level-text-wrapper">
+                        <span class="traveler__level-number">25</span>
+                        <span class="traveler__level-text">level</span>
+                      </div>
+                      <svg><!--картинка для прогресс-бара--></svg>
                     </div>
-                    <svg><!--картинка для прогресс-бара--></svg>
                   </div>
                 </div>
-              </div>
-              <a class="button suitable-companions__more" href="#">Позвать!</a>
-            </article>
-          </li>
-        </ul>
-        <a class="suitable-companions__button" href="more-companions.html">Показать еще</a>
-        <div class="suitable-companions__controls-wrapper">
-          <button class="suitable-companions__control sutable-companions__control--back" type="button" aria-label="Перейти к предыдущему попутчику"></button>
-          <button class="suitable-companions__control sutable-companions__control--forward" type="button" aria-label="Перейти к следующему попутчику"></button>
-        </div>
-      </section>
+                <a class="button suitable-companions__more" href="#">Позвать!</a>
+              </article>
+            </li>
+            <li class="suitable-companions__item">
+              <article class="suitable-companions__traveler traveler">
+                <h3 class="visually-hidden">Информация о пользователе</h3>
+                <section class="traveler__info">
+                  <a class="traveler__info-link" href="larisa-rogovaya.html">
+                    <h4 class="traveler__name">Лариса Роговая</h4>
+                    <img class="traveler__info-photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Изображение Ларисы Роговой">
+                  </a>
+                  <span class="traveler__remoteness">23</span>
+                  <span class="traveler__status traveler__status--online"></span>
+                  <p class="traveler__tags">#образование #карьера #учеба #линкедин</p>
+                </section>
+                <section class="traveler__wishes">
+                  <h4 class="traveler__wishes-title">хочет посетить:</h4>
+                  <ul class="traveler__wishes-list places">
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/england-flag.png" width="88" height="35" alt="Государственный флаг Королевста Великобритания">
+                    </li>
+                    <li class="traveler__wishes-item places__item">
+                      <img class="places__image" src="img/germany-flag.png" width="88" height="35" alt="Государственный флаг Федеративной Республики Германия">
+                    </li>
+                  </ul>
+                </section>
+                <section class="traveler__way-of-movement">
+                  <h4 class="traveler__way-of-movement-title">Транспорт</h4>
+                  <div class="traveler__pics-wrapper">
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка автобуса в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка самолета в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка велосипеда в формате svg-->
+                    </span>
+                    <span class="traveler__pics">
+                      <!--здесь будет иконка человечка в формате svg-->
+                    </span>
+                  </div>
+                </section>
+                <div class="traveler__rating-wrapper">
+                  <span class="traveler__level">левел:</span>
+                  <div class="traveler__level-wrapper">
+                    <div class="traveler__level-bar">
+                      <div class="traveler__level-text-wrapper">
+                        <span class="traveler__level-number">50</span>
+                        <span class="traveler__level-text">level</span>
+                      </div>
+                      <svg><!--картинка для прогресс-бара--></svg>
+                    </div>
+                  </div>
+                </div>
+                <a class="button suitable-companions__more" href="#">Позвать!</a>
+              </article>
+            </li>
+          </ul>
+          <a class="suitable-companions__button" href="more-companions.html">Показать еще</a>
+          <div class="suitable-companions__controls-wrapper">
+            <button class="suitable-companions__control sutable-companions__control--back" type="button" aria-label="Перейти к предыдущему попутчику"></button>
+            <button class="suitable-companions__control sutable-companions__control--forward" type="button" aria-label="Перейти к следующему попутчику"></button>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo">Погнали?</a>

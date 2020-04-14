@@ -44,4 +44,33 @@
     border: 3px solid #192144;
     border-radius: 10px;
   }
+
+  &--filter-close {
+    padding: 14px 0 14px 28px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161c35;
+    background-color: #d6daed;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+  }
+
+  &--companion {
+    padding: 14px 0;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161c35;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+  &--suitable-companions {
+    padding: 14px 0;
+    color: #161c35;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
