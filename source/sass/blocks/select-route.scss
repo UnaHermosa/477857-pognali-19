@@ -1,0 +1,22 @@
+.select-route__name {
+  padding: 11px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  vertical-align: bottom;
+  text-transform: uppercase;
+
+  &--shown {
+    color: #ffffff;
+    background-color: #1d2e5b;
+    border: 1px solid #1d2e5b;
+  }
+}
+
+.select-route__flag-wrapper {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}

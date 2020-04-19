@@ -1,0 +1,35 @@
+.input__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  line-height: 16px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+}
+
+.input__sign {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  line-height: 16px;
+  color: rgba(29, 46, 91, 0.3);
+  text-transform: uppercase;
+}
+
+.input__wrapper {
+  margin-bottom: 20px;
+  padding: 15px 13px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.input__button-number {
+  background-color: transparent;
+  border: none;
+}
+
+.input__amount {
+  width: 150px;
+  border: none;
+  text-align: center;
+}

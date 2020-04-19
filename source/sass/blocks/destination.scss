@@ -1,0 +1,60 @@
+.destination {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #1d2e5b;
+  background-color: #dfe3f0;
+  text-transform: uppercase;
+}
+
+.destination__title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.destination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.destination__item {
+  margin-bottom: 10px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.destination__item:last-child {
+  margin-bottom: 0;
+}
+
+.destination__countries {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.destination__companions,
+.destination__dates {
+  display: block;
+}
+
+.destination__companions {
+  margin-bottom: 5px;
+}
+
+.destination__dates {
+  margin-bottom: 25px;
+}
+
+.destination__button {
+  line-height: 18px;
+  color: #b2b2b2;
+}

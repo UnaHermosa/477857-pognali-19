@@ -1,0 +1,39 @@
+.travelmates {
+  padding: 73px 25px 30px;
+  background-image: url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat,
+    no-repeat;
+  background-size: auto,
+    auto;
+  background-position: 155px 39px,
+    0 312px;
+}
+
+.travelmates__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+.travelmates__text {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.travelmates__text:last-of-type {
+  margin-bottom: 62px;
+}
+
+.travelmates__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.travelmates__item {
+  margin-bottom: 10px;
+}

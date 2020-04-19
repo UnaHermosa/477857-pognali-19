@@ -1,0 +1,67 @@
+.traveler {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #444444;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.traveler__wrapper {
+  padding: 27px 0 22px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.traveler__name {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weigth: 700;
+  color: #1d2e5b;
+}
+
+.traveler__tags {
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.traveler__pics-wrapper {
+  margin-bottom: 20px;
+  //временная заливка
+  background-color: blue;
+  // временная высота
+  height: 21px;
+}
+
+.traveler__likes {
+  padding: 0;
+  padding-left: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.traveler__counter {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+  text-transform: uppercase;
+}
+
+.traveler__wishes {
+  margin-bottom: 18px;
+}
+
+.traveler__wishes-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.traveler__way-of-movement-title {
+  margin: 0;
+  margin-bottom: 15px;
+}

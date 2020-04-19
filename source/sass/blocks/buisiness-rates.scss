@@ -1,0 +1,42 @@
+.buisiness-rates {
+  box-sizing: border-box;
+  width: 270px;
+  padding: 34px 0 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.buisiness-rates__title {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+  text-align: center;
+}
+
+.buisiness-rates__list {
+  margin: 0 23px 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.buisiness-rates__item {
+  color: #444444;
+  padding: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.buisiness-rates__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 33px;
+}
+
+.buisiness-rates__button-close {
+  padding: 22px 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: #f3f4f8;
+  border: none;
+}

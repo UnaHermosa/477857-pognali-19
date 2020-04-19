@@ -1,0 +1,41 @@
+.sorter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorter__item {
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #ffffff;
+
+  &--active {
+    background-color: #1d2e5b;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--active-dropdown {
+    background-color: #cbced9;
+  }
+}
+
+.sorter__link {
+  color: #1d2e5b;
+
+  &--active {
+    color: #ffffff;
+  }
+
+  &--active-dropdown {
+    color: #1d2e5b;
+  }
+}
+
+.sorter__sublist--hidden {
+  display: none;
+}
