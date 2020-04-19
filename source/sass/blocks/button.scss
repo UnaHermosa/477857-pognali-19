@@ -19,6 +19,16 @@
     text-align: center;
   }
 
+  &--login-colored {
+    padding: 15px 0;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 25px;
+    color: #161c35;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
   &--phone,
   &--email {
     padding: 11px 12px;
@@ -72,5 +82,46 @@
     color: #161c35;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &--file {
+    padding: 14px 0;
+    font-size: 17px;
+    line-height: 30px;
+    border-radius: 20px;
+    color: #161c35;
+    background-color: #dfe3f0;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+  }
+
+  &--forward {
+    padding: 10px 0;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161c35;
+    text-transform: uppercase;
+    border-radius: 20px;
+  }
+
+  &--back {
+    padding: 10px 0;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161c35;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 20px;
+  }
+
+  &--submit {
+    padding: 10px 0;
+    font-size: 17px;
+    line-height: 30px;
+    color: #161c35;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
   }
 }

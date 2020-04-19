@@ -1,0 +1,41 @@
+.calendar__date-wrapper {
+  margin-bottom: 25px;
+  padding: 12px 0;
+  border-top: 1px solid #d4d9eb;
+  border-bottom: 1px solid #d4d9eb;
+}
+
+.calendar__date-button {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar__date-name {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.calendar__weekday {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar__weekday-item {
+  font-size: 14px;
+  line-height: 18px;
+
+  &--weekand {
+    color: #ff5c23;
+  }
+}
+
+.calendar__days {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}

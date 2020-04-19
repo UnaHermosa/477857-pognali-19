@@ -1,0 +1,30 @@
+.checkbox-day {
+  padding: 10px;
+  border: 1px solid #cbced9;
+
+  &--checked {
+    background-color: #1d2e5b;
+  }
+
+  &--current {
+    border: 2px solid #ff5c23;
+  }
+
+  &--upcoming {
+    background-color: #edeff6;
+  }
+}
+
+.checkbox-day__label {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+
+  &--checked {
+    color: #ffffff;
+  }
+
+  &--upcoming {
+    color: #444444;
+  }
+}

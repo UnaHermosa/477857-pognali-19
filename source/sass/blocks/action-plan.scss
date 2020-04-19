@@ -1,0 +1,31 @@
+.action-plan {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.action-plan__item {
+  margin-bottom: 25px;
+}
+
+.action-plan:last-child {
+  margin-bottom: 22px;
+}
+
+.action-plan__country {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+}
+
+.action-plan__text {
+  padding: 13px 15px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}

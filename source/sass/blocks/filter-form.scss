@@ -5,10 +5,24 @@
   font-weight: 700;
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  &--user {
+    padding: 20px 0 25px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+  }
 }
 
 .filter-form__legend {
   padding: 0;
+  color: #1d2e5b;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--user {
+    padding: 0 15px;
+    text-align: center;
+  }
 }
 
 .filter-form__link {
@@ -27,4 +41,14 @@
 
 .filter-form__item:last-child {
   margin-bottom: 0;
+}
+
+.filter-form__tags {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  background-color: #edeff6;
+  border: none;
 }

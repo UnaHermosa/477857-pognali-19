@@ -1,0 +1,18 @@
+.steps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #d4d9eb;
+  border-radius: 10px;
+}
+
+.steps-list__item {
+  margin-bottom: 10px;
+  padding: 25px 25px 22px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.steps-list__item:last-child {
+  margin-bottom: 0;
+}

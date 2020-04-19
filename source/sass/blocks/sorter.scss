@@ -12,8 +12,15 @@
   background-color: #ffffff;
 
   &--active {
-    color: #ffffff;
     background-color: #1d2e5b;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--active-dropdown {
+    background-color: #cbced9;
   }
 }
 
@@ -22,6 +29,10 @@
 
   &--active {
     color: #ffffff;
+  }
+
+  &--active-dropdown {
+    color: #1d2e5b;
   }
 }
 
