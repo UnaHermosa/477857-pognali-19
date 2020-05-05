@@ -54,20 +54,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding: 40px 40px 90px;
+    background-image: url("../../img/about-tablet@1x.png");
+    background-size: 363px 497px;
+    background-position: 400px 50px;
+    border-radius: 0 0 60px 60px;
 
-.about-us {
-  padding: 40px 40px 90px;
-  background-image: url("../../img/about-tablet@1x.png");
-  background-size: 363px 497px;
-  background-position: 400px 50px;
-  border-radius: 0 0 60px 60px;
-
-  &::after {
-    width: 688px;
-    height: 213px;
-    top: 0;
-    left: 40px;
-    border-radius: 20px;
+    &::after {
+      width: 688px;
+      height: 213px;
+      top: 0;
+      left: 40px;
+      border-radius: 20px;
     }
   }
 
@@ -103,11 +102,11 @@
     background-size: 667px 663px;
     background-position: 727px 80px;
 
-  &::after {
-    width: 213px;
-    height: 213px;
-    top: 70px;
-    left: 60px;
+    &::after {
+      width: 213px;
+      height: 213px;
+      top: 70px;
+      left: 60px;
     }
   }
 
