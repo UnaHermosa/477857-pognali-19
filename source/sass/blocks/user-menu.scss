@@ -1,14 +1,41 @@
 .user-menu {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }
 
-.user-menu__item:first-of-type {
+.user-menu__item:nth-child(1) {
   margin-bottom: 50px;
 }
 
-.user-menu__item--double {
-  margin-bottom: 0;
+.user-menu__svg-wrapper {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #121936;
+}
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    margin-bottom: 120px;
+  }
+
+  .user-menu__item:nth-child(1) {
+    display: none;
+  }
+
+  .user-menu__svg-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-right: 25px;
+  }
+
+  .user-menu__button-text {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

@@ -1,14 +1,20 @@
 .buisiness-rates {
-  box-sizing: border-box;
+  position: absolute;
   width: 270px;
-  padding: 34px 0 24px;
+  top: 20px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 34px 0 0;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 20px;
+  z-index: 10;
 }
 
 .buisiness-rates__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
@@ -16,27 +22,104 @@
 }
 
 .buisiness-rates__list {
-  margin: 0 23px 28px;
+  margin: 0 23px 35px;
   padding: 0;
   list-style: none;
 }
 
 .buisiness-rates__item {
   color: #444444;
-  padding: 15px 0;
+  padding: 14px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .buisiness-rates__item:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  margin-bottom: 33px;
+  margin-bottom: 0;
 }
 
 .buisiness-rates__button-close {
-  padding: 22px 0;
+  width: 100%;
+  padding: 22px 0 24px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   background-color: #f3f4f8;
   border: none;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .buisiness-rates {
+    width: 688px;
+    top: 55px;
+    left: 40px;
+    padding: 55px 0 0;
+    border-radius: 30px;
+  }
+
+  .buisiness-rates__title {
+    margin-bottom: 55px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .buisiness-rates__list {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .buisiness-rates__item {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 14px 0;
+  }
+
+  .buisiness-rates__button-close {
+    width: 100%;
+    margin-top: auto;
+    padding: 40px 0 45px;
+    font-size: 24px;
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .buisiness-rates {
+    width: 750px;
+    top: 175px;
+    left: 50%;
+    margin-left: -375px;
+    padding: 55px 0 0;
+    border-radius: 30px;
+    box-shadow: 20px 0 50px rgba(29, 46, 91, 0.1);
+  }
+
+  .buisiness-rates__title {
+    margin-bottom: 55px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .buisiness-rates__list {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  .buisiness-rates__item {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 14px 0;
+  }
+
+  .buisiness-rates__button-close {
+    width: 100%;
+    margin-top: auto;
+    padding: 40px 0 45px;
+    font-size: 24px;
+    border-radius: 0 0 30px 30px;
+  }
 }

@@ -1,25 +1,136 @@
 .about-us {
+  position: relative;
   padding: 32px 25px 85px;
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: 20px 0;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  z-index: 10;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 132px;
+    height: 132px;
+    top: 0;
+    left: -26px;
+    background-color: #141b3b;
+    border-radius: 10px;
+  }
+}
+
+.about-us__wrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about-us__title {
+  position: relative;
   margin: 0;
   margin-bottom: 23px;
   font-size: 24px;
   line-height: 24px;
   font-weight: bold;
   color: #ff8d30;
+  z-index: 2;
 }
 
 .about-us__text {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
+  z-index: 2;
 }
 
 .about-us__text:last-of-type {
   margin-bottom: 0;
   font-weight: bold;
+}
+
+.about-us__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+.about-us {
+  padding: 40px 40px 90px;
+  background-image: url("../../img/about-tablet@1x.png");
+  background-size: 363px 497px;
+  background-position: 400px 50px;
+  border-radius: 0 0 60px 60px;
+
+  &::after {
+    width: 688px;
+    height: 213px;
+    top: 0;
+    left: 40px;
+    border-radius: 20px;
+    }
+  }
+
+  .about-us__title {
+    margin-bottom: 40px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about-us__text {
+    width: 63%;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 35px;
+  }
+
+  .about-us__text:last-of-type {
+    width: 50%;
+    margin-bottom: 50px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about-us__button {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding: 120px 60px 165px;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-size: 667px 663px;
+    background-position: 727px 80px;
+
+  &::after {
+    width: 213px;
+    height: 213px;
+    top: 70px;
+    left: 60px;
+    }
+  }
+
+  .about-us__title {
+    margin-bottom: 60px;
+  }
+
+  .about-us__text {
+    width: 60%;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 45px;
+  }
+
+  .about-us__text br {
+    display: none;
+  }
+
+  .about-us__text:last-of-type {
+    margin-bottom: 85px;
+  }
+
+  .about-us__button {
+    display: flex;
+  }
 }

@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ffd74b;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    outline: 1px solid #ff5c23;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &--menu {
+    background-color: #ffffff;
+  }
 }

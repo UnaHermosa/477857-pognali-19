@@ -1,5 +1,9 @@
 .button {
-  display: block;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 24px;
   font-size: 18px;
@@ -8,22 +12,40 @@
   color: #1d2e5b;
   background-color: #ffd74b;
   border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:focus {
+    outline: 1px solid #ff5c23;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 
   &--login {
-    padding: 18px 0;
+    padding: 9px 0;
     font-size: 17px;
     line-height: 30px;
     border-radius: 25px;
     color: #161c35;
     text-transform: uppercase;
     text-align: center;
+    justify-content: center;
   }
 
   &--login-colored {
-    padding: 15px 0;
+    padding: 5px 37px;
+    border-radius: 20px;
     font-size: 17px;
     line-height: 30px;
-    border-radius: 25px;
     color: #161c35;
     text-transform: uppercase;
     text-align: center;
@@ -31,23 +53,85 @@
 
   &--phone,
   &--email {
-    padding: 11px 12px;
+    justify-content: flex-start;
+    align-items: baseline;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
     background: none;
-    padding-left: 60px;
     color: #192144;
     text-transform: uppercase;
   }
 
   &--phone-lite,
   &--email-lite {
+    background: none;
+    padding: 0;
     color: #ffd74b;
+  }
+
+  &--phone-lite:hover,
+  &--email-lite:hover {
+    background-color: transparent;
+    color: #ffbd30;
+  }
+
+  &--phone-lite:active,
+  &--email-lite:active {
+    background-color: transparent;
+    color: rgba(255, 189, 48, 0.3);
+  }
+
+  &--phone-colored,
+  &--email-colored {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    background-color: #ff8d30;
+    line-height: 45px;
+    text-align: center;
+    z-index: 2;
+
+    &:hover,
+    &:hover,
+    &:hover {
+      background-color: #f26926;
+    }
+
+    &:active,
+    &:active,
+    &:active {
+      color: rgba(20, 27, 59, 0.3);
+      background-color: #f26926;
+    }
+
+    &:active svg,
+    &:active svg {
+      opacity: 0.3;
+    }
+  }
+
+  &--email-colored {
+    background-color: #ffbd30;
+
+    &:hover {
+      background-color: #ff8d30;
+    }
   }
 
   &--join {
     border: none;
     padding: 30px 31px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 14px;
+    background-position: 50% 50%;
   }
 
   &--route {
@@ -123,5 +207,73 @@
     text-transform: uppercase;
     border: none;
     border-radius: 20px;
+  }
+
+  &--about-us {
+    width: 275px;
+    margin: 0;
+    margin-right: auto;
+    padding: 30px 25px 34px 30px;
+  }
+}
+
+.button svg {
+  align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 28px 35px 30px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &--join {
+      padding: 38px;
+      border-radius: 0 20px 20px 0;
+    }
+
+    &--phone,
+    &--email {
+      padding: 0;
+    }
+
+    &--phone-lite,
+    &--email-lite {
+      padding: 0;
+    }
+
+    &--route {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    &--login-colored {
+      padding: 17px;
+      font-size: 20px;
+      line-height: 30px;
+      border-radius: 25px;
+    }
+
+    &--show {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--phone-colored,
+  .button--email-colored {
+    width: 50px;
+    height: 50px;
+  }
+
+  .button--show {
+    width: 275px;
+    margin: 0;
+  }
+
+  .button--route {
+    width: 335px;
+    margin: 0;
   }
 }

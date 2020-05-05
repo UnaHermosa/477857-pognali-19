@@ -2,6 +2,10 @@
 
 @import "general.scss";
 
+//Переменные
+
+@import "variables.scss";
+
 // Стили блоков
 
 @import "blocks/button.scss";
@@ -48,3 +52,5 @@
 @import "blocks/select-route.scss";
 @import "blocks/action-plan.scss";
 @import "blocks/dropdown.scss";
+@import "blocks/map.scss";
+@import "blocks/modal.scss";

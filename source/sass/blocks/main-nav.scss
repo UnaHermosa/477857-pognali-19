@@ -1,20 +1,23 @@
 .main-nav {
+  display: none;
+  box-sizing: border-box;
   position: relative;
   margin: 0;
-  margin-top: 79px;
-  margin-bottom: 58px;
   padding: 0;
 }
 
 .main-nav__list {
+  display: flex;
+  box-sizing: border-box;
+  width: 500px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .main-nav__item {
+  width: 33%;
   text-align: center;
-  margin-bottom: 15px;
 }
 
 .main-nav__item:last-child {
@@ -22,9 +25,36 @@
 }
 
 .main-nav__link {
-  color: #192144;
-  font-size: 30px;
-  line-height: 36px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -80px;
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 1px;
+    }
+  }
+
+  .main-nav__item {
+    margin-right: 33px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
 }

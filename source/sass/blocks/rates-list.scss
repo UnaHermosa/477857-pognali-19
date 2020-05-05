@@ -1,13 +1,58 @@
 .rates-list {
   margin: 0;
   padding: 0;
+  padding-right: 40px;
   list-style: none;
 }
 
 .rates-list__item {
-  padding: 15px 45px 25px 18px;
-  color: #444444;
+  position: relative;
+  padding: 15px 0 25px 0;
+  color: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+.rates-list__item--first::after {
+  position: absolute;
+  content: "1";
+  width: 35px;
+  height: 35px;
+  top: 4px;
+  right: -40px;
+  border-radius: 50%;
+  background-color: #ffa530;
+  background-size: 34px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.rates-list__item--second::after {
+  position: absolute;
+  content: "2";
+  width: 35px;
+  height: 35px;
+  top: 4px;
+  right: -40px;
+  border-radius: 50%;
+  background-size: 34px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ffbd30;
+}
+
+.rates-list__item--third::after {
+  position: absolute;
+  content: "3";
+  width: 35px;
+  height: 35px;
+  top: 4px;
+  right: -40px;
+  border-radius: 50%;
+  background-size: 34px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ffd74b;
 }
 
 .rates-list__item:last-child {
@@ -17,8 +62,74 @@
 .rates-list__item-text {
   display: block;
   margin-bottom: 6px;
+  color: #444444;
 }
 
 .rates-list__item-text:nth-child(2n) {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .rates-list {
+    padding-right: 30px;
+    padding-left: 100px;
+  }
+
+  .rates-list__item {
+    display: flex;
+    padding: 20px 0 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .rates-list__item--first::after {
+    position: absolute;
+    content: "1";
+    width: 67px;
+    height: 67px;
+    top: 0;
+    left: -100px;
+    border-radius: 50%;
+    background-color: #ffa530;
+    background-size: 34px;
+    font-size: 28px;
+    line-height: 67px;
+    text-align: center;
+  }
+
+  .rates-list__item--second::after {
+    position: absolute;
+    content: "2";
+    width: 67px;
+    height: 67px;
+    top: 0;
+    left: -100px;
+    border-radius: 50%;
+    background-size: 34px;
+    font-size: 28px;
+    line-height: 67px;
+    text-align: center;
+    background-color: #ffbd30;
+  }
+
+  .rates-list__item--third::after {
+    position: absolute;
+    content: "3";
+    width: 67px;
+    height: 67px;
+    top: 0;
+    left: -100px;
+    border-radius: 50%;
+    background-size: 34px;
+    font-size: 28px;
+    line-height: 67px;
+    text-align: center;
+    background-color: #ffd74b;
+  }
+
+  .rates-list__item-text {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 0;
+  }
 }

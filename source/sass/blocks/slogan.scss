@@ -2,7 +2,45 @@
   margin: 0;
 }
 
+.slogan__author {
+  display: block;
+  width: 70%;
+}
+
 .slogan__text {
+  display: block;
+  width: 70%;
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan__author {
+    width: 40%;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .slogan__text {
+    width: 53%;
+    padding-bottom: 47px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    width: 300px;
+    margin-bottom: 115px;
+  }
+
+  .slogan__text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .slogan__author {
+    width: 100%;
+  }
 }

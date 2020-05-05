@@ -1,34 +1,126 @@
 .steps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .steps__item {
-  padding: 25px 23px 23px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 23px 25px;
   color: #161c35;
   background-color: #ff8d30;
+  border-radius: 10px 10px 0 0;
 
   &--second {
+    margin-top: -8px;
     background-color: #ffa530;
   }
 
   &--third {
+    margin-top: -8px;
     background-color: #ffbd30;
   }
 
   &--fourth {
+    margin-top: -8px;
     background-color: #ffd74b;
+    border-radius: 10px;
   }
 }
 
 .steps__description {
   margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
 .steps__number {
   color: #ffffff;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .steps {
+    flex-direction: row;
+  }
+
+  .steps__item {
+    box-sizing: border-box;
+    min-width: 360px;
+    margin: 0;
+    padding: 30px 28px 28px;
+    flex-direction: column;
+    border-radius: 20px 0 0 0;
+
+    &--second {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &--third {
+      border-radius: 0 0 0 20px;
+    }
+
+    &--fourth {
+      border-radius: 0 0 20px 20px;
+    }
+
+    &--second,
+    &--fourth {
+      min-width: 345px;
+      margin-left: -15px;
+    }
+  }
+
+  .steps__description {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+
+  .steps__number {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps__item {
+    flex-direction: row;
+    border-radius: 20px 0 0 20px;
+
+    &--second {
+      border-radius: 20px 0 0 20px;
+    }
+
+    &--third {
+      border-radius: 20px 0 0 20px;
+    }
+
+    &--fourth {
+      min-width: 315px;
+      border-radius: 20px;
+    }
+
+    &--second,
+    &--third,
+    &--fourth {
+      min-width: 350px;
+      margin-left: -15px;
+    }
+  }
+
+  .steps__description {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 14px;
+  }
+
+  .steps__number {
+    font-size: 30px;
+  }
 }

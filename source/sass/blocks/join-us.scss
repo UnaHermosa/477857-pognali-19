@@ -1,18 +1,28 @@
 .join-us {
-  padding: 72px 25px 29px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  padding: 100px 25px 29px;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  z-index: 6;
 }
 
 .join-us__title {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 23px;
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
+  text-align: center;
 }
 
 .join-us__text {
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .join-us__link {
@@ -21,6 +31,9 @@
 }
 
 .join-us__form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -28,4 +41,109 @@
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.join-us__email {
+  box-sizing: border-box;
+  width: 270px;
+}
+
+.join-us__button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.join-us__button-text {
+  margin-left: 16px;
+}
+
+.join-us__svg-wrapper {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #121936;
+}
+
+.join-us__svg {
+  fill: #ffd74b;
+}
+
+@media (min-width: $tablet-width) {
+  .join-us {
+    margin-top: -55px;
+    padding: 135px 40px 60px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .join-us__wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .join-us__title {
+    margin-bottom: 60px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .join-us__text {
+    width: auto;
+    margin-bottom: 65px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .join-us__text br:first-of-type {
+    display: none;
+  }
+
+  .join-us__form {
+    margin-bottom: 60px;
+  }
+
+  .join-us__clarify {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 45px;
+  }
+
+  .join-us__clarify br {
+    display: none;
+  }
+
+  .join-us__button-text {
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  .join-us__svg-wrapper {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .join-us {
+    padding: 170px 60px 105px;
+  }
+
+  .join-us__text {
+    margin-bottom: 55px;
+  }
+
+  .join-us__form {
+    margin-bottom: 70px;
+  }
+
+  .join-us__button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

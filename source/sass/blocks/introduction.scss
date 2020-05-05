@@ -1,5 +1,19 @@
 .introduction {
+  position: relative;
   padding: 50px 25px 39px;
+  background-color: #192144;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    height: 285px;
+    background-color: #141b3b;
+    z-index: -1;
+  }
 }
 
 .introduction__slogan {
@@ -8,4 +22,51 @@
 
 .slogan__author {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .introduction {
+    padding: 0 40px 225px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .introduction__slogan {
+    margin-bottom: 0;
+    position: absolute;
+    top: -520px;
+    left: 70px;
+  }
+
+  .slogan__author {
+    font-weight: bold;
+  }
+
+  .introduction__steps {
+    position: absolute;
+    z-index: 15;
+    bottom: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduction {
+    padding: 0;
+  }
+
+  .introduction__slogan {
+    top: -530px;
+    left: 1095px;
+  }
+
+  .slogan__author {
+    font-weight: bold;
+  }
+
+  .introduction__steps {
+    left: 60px;
+    bottom: 95px;
+  }
 }

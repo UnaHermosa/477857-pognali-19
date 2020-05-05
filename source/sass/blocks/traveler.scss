@@ -1,40 +1,116 @@
 .traveler {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
   color: #444444;
   background-color: #ffffff;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .traveler__wrapper {
-  padding: 27px 0 22px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
 }
 
+.traveler__level-wrapper {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.35);
+  top: 16px;
+  left: 17px;
+}
+
+.traveler__level-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: transparent;
+  stroke: #ff8d30;
+  stroke-width: 5px;
+  stroke-dasharray: 160px 5px;
+  stroke-dashoffset: 32px;
+
+  &--80 {
+    stroke-dasharray: 150px 20px;
+    stroke-dashoffset: 40px;
+  }
+}
+
+.traveler__level-text-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 35px;
+  height: 40px;
+  z-index: 5;
+}
+
+.traveler__level-number {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.traveler__level-text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  vertical-align: bottom;
+}
+
+.traveler__name-wrapper {
+  position: relative;
+}
+
 .traveler__name {
   margin: 0;
   margin-bottom: 15px;
-  padding-left: 20px;
   font-size: 21px;
   line-height: 21px;
-  font-weigth: 700;
+  font-weight: 700;
   color: #1d2e5b;
+  text-align: center;
 }
 
 .traveler__tags {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
 }
 
 .traveler__pics-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   margin-bottom: 20px;
-  //временная заливка
-  background-color: blue;
-  // временная высота
-  height: 21px;
 }
 
 .traveler__likes {
@@ -64,4 +140,61 @@
 .traveler__way-of-movement-title {
   margin: 0;
   margin-bottom: 15px;
+}
+
+.traveler__status::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 6px;
+  left: 13px;
+  border-radius: 50%;
+  background-color: #f97676;
+}
+
+.traveler__status--online::before {
+  background-color: #81e31e;
+}
+
+.traveler__pics {
+  margin-right: 17px;
+  fill: rgba(20, 27, 59, 0.15);
+
+  &--on {
+    fill: rgba(20, 27, 59, 1);
+  }
+}
+
+.traveler__pics:last-of-type {
+  margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler {
+    width: 285px;
+    border-radius: 20px;
+  }
+
+  .traveler__wrapper {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .traveler__name {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .traveler__tags {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .traveler__pics-wrapper {
+    margin-bottom: 30px;
+  }
 }
